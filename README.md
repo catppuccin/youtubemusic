@@ -37,15 +37,13 @@
 ## Usage
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 2. Then install with Stylus (click on the link):
-  - [🌻 Catppuccin Latte](https://github.com/catppuccin/youtubemusic/raw/main/src/latte.user.css)
-  - [🪴 Catppuccin Frappe](https://github.com/catppuccin/youtubemusic/raw/main/src/frappe.user.css)
-  - [🌺 Catppuccin Macchiato](https://github.com/catppuccin/youtubemusic/raw/main/src/macchiato.user.css)
-  - [🌿 Catppuccin Mocha](https://github.com/catppuccin/youtubemusic/raw/main/src/mocha.user.css)
-3. Choose Your accent color by Setting Theme in Stylus Options
+  - [🎧 Catppuccin for Youtube Music](https://github.com/catppuccin/youtubemusic/raw/main/src/youtubemusic.user.css)
+3. Choose Your accent color and flavor by Setting Theme in Stylus Options
 
 ## 💝 Thanks to
 
 - [rubyowo](https://github.com/rubyowo)
+- [Anubis](https://github.com/anubisnekhet)
 
 &nbsp;
 
