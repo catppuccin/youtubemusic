@@ -35,17 +35,38 @@
 </details>
 
 ## Usage
+### [Youtube Music Desktop App (th-ch)](https://github.com/th-ch/youtube-music)
+1. Choose your flavour, and save it locally, or get it from [Github Releases](https://github.com/catppuccin/youtubemusic/releases/latest)
+2. Assuming you have the latest build with the theme selection menu, open the app, click `Options > Visual Tweaks > Theme > Import custom CSS file`, and choose the CSS file you want to apply.
+
+### [Youtube Music Desktop App (ytmdesktop)](https://github.com/ytmdesktop/ytmdesktop)
+
+1. Navigate to the settings of the Youtube Music Desktop App.
+2. Go to the appearances tab and turn on custom theme.
+3. Click on the pencil icon to open up the editor window.
+4. Paste in the import for your flavour and press the save button.
+```css
+/* latte */
+@import url("https://catppuccin.github.io/youtubemusic/src/latte.theme.css");
+/* frappe */
+@import url("https://catppuccin.github.io/youtubemusic/src/frappe.theme.css");
+/* macchiato */
+@import url("https://catppuccin.github.io/youtubemusic/src/macchiato.theme.css");
+/* mocha */
+@import url("https://catppuccin.github.io/youtubemusic/src/mocha.theme.css");
+```
+
+### [Stylus](https://github.com/openstyles/stylus)
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 2. Then install with Stylus (click on the link):
-  - [🌻 Catppuccin Latte](https://github.com/catppuccin/youtubemusic/raw/main/src/latte.user.css)
-  - [🪴 Catppuccin Frappe](https://github.com/catppuccin/youtubemusic/raw/main/src/frappe.user.css)
-  - [🌺 Catppuccin Macchiato](https://github.com/catppuccin/youtubemusic/raw/main/src/macchiato.user.css)
-  - [🌿 Catppuccin Mocha](https://github.com/catppuccin/youtubemusic/raw/main/src/mocha.user.css)
-3. Choose Your accent color by Setting Theme in Stylus Options
+  - [🎧 Catppuccin for Youtube Music](https://github.com/catppuccin/youtubemusic/raw/main/src/youtubemusic.user.css)
+3. Choose your flavor by Setting Theme in Stylus Options
+
 
 ## 💝 Thanks to
 
 - [rubyowo](https://github.com/rubyowo)
+- [Anubis](https://github.com/anubisnekhet)
 
 &nbsp;
 
