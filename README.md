@@ -37,7 +37,8 @@
 ## Usage
 ### [Youtube Music Desktop App (th-ch)](https://github.com/th-ch/youtube-music)
 1. Choose your flavour, and save it locally, or get it from [Github Releases](https://github.com/catppuccin/youtubemusic/releases/latest)
-2. Assuming you have the latest build with the theme selection menu, open the app, click `Options > Visual Tweaks > Theme > Import custom CSS file`, and choose the CSS file you want to apply.
+2. If you want to change the accent color, change the hex code on line 2 after downloading. 
+3. Assuming you have the latest build with the theme selection menu, open the app, click `Options > Visual Tweaks > Theme > Import custom CSS file`, and choose the CSS file you want to apply.
 
 ### [Youtube Music Desktop App (ytmdesktop)](https://github.com/ytmdesktop/ytmdesktop)
 
@@ -47,20 +48,25 @@
 4. Paste in the import for your flavour and press the save button.
 ```css
 /* latte */
-@import url("https://catppuccin.github.io/youtubemusic/src/latte.theme.css");
+@import url("https://catppuccin.github.io/youtubemusic/src/latte.css");
 /* frappe */
-@import url("https://catppuccin.github.io/youtubemusic/src/frappe.theme.css");
+@import url("https://catppuccin.github.io/youtubemusic/src/frappe.css");
 /* macchiato */
-@import url("https://catppuccin.github.io/youtubemusic/src/macchiato.theme.css");
+@import url("https://catppuccin.github.io/youtubemusic/src/macchiato.css");
 /* mocha */
-@import url("https://catppuccin.github.io/youtubemusic/src/mocha.theme.css");
+@import url("https://catppuccin.github.io/youtubemusic/src/mocha.css");
+
+/* if you want to change the accent color, paste this in aswell and change the hex code */
+html:not(.style-scope) {
+    --accentColor: #f5e0dc !important;
+}
 ```
 
 ### [Stylus](https://github.com/openstyles/stylus)
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 2. Then install with Stylus (click on the link):
   - [🎧 Catppuccin for Youtube Music](https://github.com/catppuccin/youtubemusic/raw/main/src/youtubemusic.user.css)
-3. Choose your flavor by Setting Theme in Stylus Options
+3. Choose your flavor and accent color in the Configure window in Stylus Options
 
 
 ## 💝 Thanks to

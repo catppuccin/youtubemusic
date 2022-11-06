@@ -37,9 +37,7 @@
       $base =          239, 241, 245
       $mantle =        230, 233, 239
       $crust =         220, 224, 232
-      @import url("https://catppuccin.github.io/youtubemusic/src/latte.theme.css");
-    }
-    if (theme == "Frappe") {
+    } else if (theme == "Frappe") {
       $rosewater =     242, 213, 207
       $flamingo =      238, 190, 190
       $pink =          244, 184, 228
@@ -66,9 +64,7 @@
       $base =          48, 52, 70
       $mantle =        41, 44, 60
       $crust =         35, 38, 52
-      @import url("https://catppuccin.github.io/youtubemusic/src/frappe.theme.css");
-    }
-   if (theme == "Macchiato") {
+    } else if (theme == "Macchiato") {
       $rosewater =     244, 219, 214
       $flamingo =      240, 198, 198
       $pink =          245, 189, 230
@@ -95,9 +91,7 @@
       $base =          36, 39, 58
       $mantle =        30, 32, 48
       $crust =         24, 25, 38
-      @import url("https://catppuccin.github.io/youtubemusic/src/macchiato.theme.css");
-    }
-    if (theme == "Mocha") {
+    } else if (theme == "Mocha") {
       $rosewater =     245, 224, 220
       $flamingo =      242, 205, 205
       $pink =          245, 194, 231
@@ -124,7 +118,6 @@
       $base =          30, 30, 46
       $mantle =        24, 24, 37
       $crust =         17, 17, 27
-      @import url("https://catppuccin.github.io/youtubemusic/src/mocha.theme.css");
     }
 
     if (accent-color=="Rosewater") {
@@ -158,6 +151,18 @@
       }  else if (accent-color=="Gray") {
           $accent-color = $subtext0
       }
-
-      --accentColor: rgb($accent-color) !important;
+      
+    if (theme == "Latte") {
+        @import url("https://catppuccin.github.io/youtubemusic/src/latte.css");
+    } else if (theme == "Frappe") {
+        @import url("https://catppuccin.github.io/youtubemusic/src/frappe.css");
+    } else if (theme == "Macchiato") {
+        @import url("https://catppuccin.github.io/youtubemusic/src/macchiato.css");
+    } else if (theme == "Mocha") {
+        @import url("https://catppuccin.github.io/youtubemusic/src/mocha.css");
+    }
+    
+    html:not(.style-scope) {
+        --accentColor: rgb($accent-color) !important;
+    }
 }
