@@ -73,6 +73,7 @@ html:not(.style-scope) {
 
 - [rubyowo](https://github.com/rubyowo)
 - [Anubis](https://github.com/anubisnekhet)
+- [OceanicSquirrel](https://github.com/OceanicSquirrel)
 
 &nbsp;
 
