@@ -36,16 +36,17 @@
 
 ## Usage
 ### [Youtube Music Desktop App (th-ch)](https://github.com/th-ch/youtube-music)
-1. Choose your flavour, and save it locally, or get it from [Github Releases](https://github.com/catppuccin/youtubemusic/releases/latest)
-2. If you want to change the accent color, change the hex code on line 2 after downloading. 
-3. Assuming you have the latest build with the theme selection menu, open the app, click `Options > Visual Tweaks > Theme > Import custom CSS file`, and choose the CSS file you want to apply.
+1. Create a new css file with one of the flavour imports below.
+2. Assuming you have the latest build with the theme selection menu, open the app, click `Options > Visual Tweaks > Theme > Import custom CSS file`, and choose the CSS file.
 
 ### [Youtube Music Desktop App (ytmdesktop)](https://github.com/ytmdesktop/ytmdesktop)
 
 1. Navigate to the settings of the Youtube Music Desktop App.
 2. Go to the appearances tab and turn on custom theme.
 3. Click on the pencil icon to open up the editor window.
-4. Paste in the import for your flavour and press the save button.
+4. Paste in the flavour import for your flavour and press the save button.
+
+### The code
 ```css
 /* latte */
 @import url("https://catppuccin.github.io/youtubemusic/src/latte.css");
