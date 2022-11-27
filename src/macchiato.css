@@ -372,3 +372,7 @@ paper-icon-button.ytmusic-like-button-renderer {
 .dropdown-content {
   background-color: var(--dark-foreground) !important;
 }
+
+.cet-titlebar .cet-linux {
+    background-color: var(--dark-background)!important;
+}
