@@ -385,3 +385,7 @@ yt-unlimited-page-header-renderer {
   background: var(--dark-foreground) !important;
   color: var(--light-foreground) !important;
 }
+
+.yt-music-pass-small-feature-info-renderer#description {
+  color: var(--light-foreground-3) !important;
+}
