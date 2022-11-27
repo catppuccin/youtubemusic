@@ -376,3 +376,12 @@ paper-icon-button.ytmusic-like-button-renderer {
 .cet-titlebar.cet-linux {
     background-color: var(--dark-background)!important;
 }
+
+yt-unlimited-page-header-renderer {
+  background: var(--dark-background) !important;
+}
+
+.yt-music-pass-feature-info-renderer {
+  background: var(--dark-foreground) !important;
+  color: var(--light-foreground) !important;
+}
