@@ -72,6 +72,7 @@ html:not(.style-scope) {
 
 ## 💝 Thanks to
 
+- [kerichdev](https://github.com/kerichdev)
 - [rubyowo](https://github.com/rubyowo)
 - [Anubis](https://github.com/anubisnekhet)
 - [OceanicSquirrel](https://github.com/OceanicSquirrel)
