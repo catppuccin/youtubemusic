@@ -294,11 +294,6 @@ paper-icon-button.ytmusic-like-button-renderer
   color: var(--ctp-text) !important;
 }
 
-.category-menu-item.iron-selected.ytmusic-settings-page
-{
-  background-color: var(--ctp-accent) !important;
-}
-
 .dropdown-content
 {
   background-color: var(--ctp-base) !important;
@@ -729,6 +724,11 @@ yt-formatted-string.summary.style-scope.ytmusic-setting-boolean-renderer
 yt-formatted-string.title.style-scope.ytmusic-setting-boolean-renderer
 {
   color: var(--ctp-text) !important;
+}
+
+tp-yt-paper-item.category-menu-item.style-scope.ytmusic-settings-page.iron-selected
+{
+  background-color: var(--ctp-crust) !important;
 }
 
 /* Client-specific changes */
