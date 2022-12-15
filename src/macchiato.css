@@ -25,6 +25,7 @@ html:not(.style-scope)
 
   --ytmusic-scrollbar-width: 0px !important;
   --ytd-scrollbar-width: 0px !important;
+  scrollbar-width: none;
 }
 
 i.material-icons
@@ -621,7 +622,7 @@ tp-yt-paper-slider#progress-bar.style-scope.ytmusic-player-bar
 
 img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/music/listening_review/HOME_RECAP_SHELF_AVATAR_BLACK_60x60.png"]
 {
-  content: url("https://raw.githubusercontent.com/kerichdev/youtubemusic/main/assets/HOME_RECAP_SHELF_AVATAR_BLACK_60x60.png") !important;
+  content: url("https://raw.githubusercontent.com/kerichdev/youtubemusic-ctp/main/assets/icons/macchiato.png") !important;
 }
 
 ytmusic-player-expanding-menu#expanding-menu.style-scope.ytmusic-player-bar
