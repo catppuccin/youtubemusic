@@ -727,6 +727,122 @@ yt-formatted-string.title.style-scope.ytmusic-setting-boolean-renderer
   color: var(--ctp-text) !important;
 }
 
+yt-formatted-string.tab.style-scope.ytmusic-item-section-tab-renderer
+{
+    color: var(--ctp-text) !important;
+}
+
+ytmusic-item-section-tab-renderer.iron-selected .tab.ytmusic-item-section-tab-renderer
+{
+    color: var(--ctp-text) !important;
+    border-bottom: 2px solid var(--ctp-text) !important;
+}
+
+ytmusic-item-section-tabs-container.style-scope.ytmusic-item-section-tabbed-header-renderer
+{
+    color: var(--ctp-text) !important;
+}
+
+div#end-items.style-scope.ytmusic-item-section-tabbed-header-renderer
+{
+    border-top: 1px solid var(--ctp-base) !important;
+}
+
+ytmusic-dropdown-item-renderer.style-scope.ytmusic-dropdown-renderer
+{
+    background-color: var(--ctp-base) !important;
+    color: var(--ctp-text) !important;
+}
+
+ytmusic-dropdown-item-renderer.style-scope.ytmusic-dropdown-renderer.iron-selected
+{
+    background-color: var(--ctp-mantle) !important;
+    color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.label.style-scope.ytmusic-dropdown-item-renderer
+{
+    color: var(--ctp-text) !important;
+}
+
+ytmusic-dropdown-renderer.style-scope.ytmusic-item-section-tabbed-header-renderer
+{
+    color: var(--ctp-text) !important;
+    background-color: var(--ctp-base) !important;
+    border: 1px solid var(--ctp-accent) !important;
+}
+
+input.style-scope.tp-yt-paper-input
+{
+    color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.flex-column.style-scope.ytmusic-responsive-list-item-renderer
+{
+    color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.title.style-scope.ytmusic-responsive-list-item-renderer
+{
+    color: var(--ctp-text) !important;
+}
+
+yt-icon.tab-icon.style-scope.ytmusic-message-renderer
+{
+    color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.text.style-scope.ytmusic-message-renderer
+{
+    color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.subtext.style-scope.ytmusic-message-renderer
+{
+    color: var(--ctp-text) !important;
+}
+
+div#header.style-scope.ytmusic-item-section-renderer
+{
+    border-bottom: 1px solid var(--ctp-base) !important;
+    box-shadow: none !important;
+}
+
+ytmusic-background-overlay-renderer#background.style-scope.ytmusic-item-thumbnail-overlay-renderer
+{
+    --ytmusic-background-overlay-background: linear-gradient(var(--ctp-base), #00000000) !important;
+}
+
+yt-formatted-string#suggestion-cell-0x0.title.style-scope.ytmusic-search-suggestion
+{
+    color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#suggestion-cell-1x0.title.style-scope.ytmusic-search-suggestion
+{
+    color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#suggestion-cell-2x0.title.style-scope.ytmusic-search-suggestion
+{
+    color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#suggestion-cell-3x0.title.style-scope.ytmusic-search-suggestion
+{
+    color: var(--ctp-text) !important;
+}
+
+ytmusic-search-box.style-scope.ytmusic-nav-bar
+{
+    border: 1px solid var(--ctp-mantle) !important;
+}
+
+img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/media/ytm/images/pbg/create-playlist-@210.png"]
+{
+   content: url("https://raw.githubusercontent.com/kerichdev/youtubemusic-ctp/main/assets/icons/macchiato-playlist.png") !important;
+}
+
 /* Client-specific changes */
 
 div.cet-titlebar.cet-linux.inactive
