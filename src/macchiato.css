@@ -622,7 +622,7 @@ tp-yt-paper-slider#progress-bar.style-scope.ytmusic-player-bar
 
 img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/music/listening_review/HOME_RECAP_SHELF_AVATAR_BLACK_60x60.png"]
 {
-  content: url("https://raw.githubusercontent.com/kerichdev/youtubemusic-ctp/main/assets/icons/macchiato.png") !important;
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/macchiato.png") !important;
 }
 
 ytmusic-player-expanding-menu#expanding-menu.style-scope.ytmusic-player-bar
@@ -840,7 +840,7 @@ ytmusic-search-box.style-scope.ytmusic-nav-bar
 
 img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/media/ytm/images/pbg/create-playlist-@210.png"]
 {
-   content: url("https://raw.githubusercontent.com/kerichdev/youtubemusic-ctp/main/assets/icons/macchiato-playlist.png") !important;
+   content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/macchiato-playlist.png") !important;
 }
 
 /* Client-specific changes */
