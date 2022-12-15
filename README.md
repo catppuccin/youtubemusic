@@ -19,19 +19,19 @@
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="assets/latte.webp"/>
+<img src="assets/latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="assets/frappe.webp"/>
+<img src="assets/frappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="assets/macchiato.webp"/>
+<img src="assets/macchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="assets/mocha.webp"/>
+<img src="assets/mocha.png"/>
 </details>
 
 ## Usage
@@ -57,9 +57,9 @@
 /* mocha */
 @import url("https://catppuccin.github.io/youtubemusic/src/mocha.css");
 
-/* if you want to change the accent color, paste this in aswell and change the hex code */
+/* if you want to change the accent color, paste this in aswell and change the hex code - or use one of the predefined colors with var(--ctp-'color') - e.g. var(--ctp-maroon) */
 html:not(.style-scope) {
-    --accentColor: #f5e0dc !important;
+    --ctp-accent: #f5e0dc !important;
 }
 ```
 
