@@ -36,6 +36,7 @@
 
 ## Usage
 ### [Youtube Music Desktop App (th-ch)](https://github.com/th-ch/youtube-music)
+
 1. Create a new css file with one of the flavour imports below.
 2. Assuming you have the latest build with the theme selection menu, open the app, click `Options > Visual Tweaks > Theme > Import custom CSS file`, and choose the CSS file.
 
@@ -47,6 +48,7 @@
 4. Paste in the flavour import for your flavour and press the save button.
 
 ### The code
+
 ```css
 /* latte */
 @import url("https://catppuccin.github.io/youtubemusic/src/latte.css");
@@ -64,11 +66,39 @@ html:not(.style-scope) {
 ```
 
 ### [Stylus](https://github.com/openstyles/stylus)
+
 1. Install Stylus extension for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/)
 2. Then install with Stylus (click on the link):
   - [🎧 Catppuccin for Youtube Music](https://github.com/catppuccin/youtubemusic/raw/main/src/youtubemusic.user.css)
 3. Choose your flavor and accent color in the Configure window in Stylus Options
 
+### Overriding Colors
+
+If you wish to change the default colors, do the following:
+
+#### For [Youtube Music Desktop App (th-ch)](https://github.com/th-ch/youtube-music)
+
+Change the respective colors in the css file you chose to the values you need, for example:
+
+```css
+    --ctp-base: #020202;
+    --ctp-crust: #010101;
+    --ctp-mantle: #000;
+/* OLEDpuccin*/
+```
+
+#### For [Youtube Music Desktop App (ytmdesktop)](https://github.com/ytmdesktop/ytmdesktop) or Stylus
+
+Paste the modified colors at the end of your theme of choice (ytmdesktop), or within `html:not(.style-scope)` (Stylus):
+
+```css
+    --ctp-base: #020202; !important;
+    --ctp-crust: #010101; !important;
+    --ctp-mantle: #000; !important;
+/* OLEDpuccin */
+```
+
+You can find the references to the available colors you can change in the beginning of any theme CSS file.
 
 ## 💝 Thanks to
 
