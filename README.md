@@ -72,29 +72,33 @@ html:not(.style-scope) {
   - [🎧 Catppuccin for Youtube Music](https://github.com/catppuccin/youtubemusic/raw/main/src/youtubemusic.user.css)
 3. Choose your flavor and accent color in the Configure window in Stylus Options
 
-### OLEDpuccin
+### Overriding Colors
 
-If you wish to use OLEDpuccin colors, do the following:
+If you wish to change the default colors, do the following:
 
 #### For [Youtube Music Desktop App (th-ch)](https://github.com/th-ch/youtube-music)
 
-Change the respective colors in the css file you chose to these values:
+Change the respective colors in the css file you chose to the values you need, for example:
 
 ```css
     --ctp-base: #020202;
     --ctp-crust: #010101;
     --ctp-mantle: #000;
+/* OLEDpuccin*/
 ```
 
 #### For [Youtube Music Desktop App (ytmdesktop)](https://github.com/ytmdesktop/ytmdesktop) or Stylus
 
-Paste this after the theme of choice (ytmdesktop), or within `html:not(.style-scope)` (Stylus):
+Paste the modified colors at the end of your theme of choice (ytmdesktop), or within `html:not(.style-scope)` (Stylus):
 
 ```css
     --ctp-base: #020202; !important;
     --ctp-crust: #010101; !important;
     --ctp-mantle: #000; !important;
+/* OLEDpuccin */
 ```
+
+You can find the references to the available colors you can change in the beginning of any theme CSS file.
 
 ## 💝 Thanks to
 
