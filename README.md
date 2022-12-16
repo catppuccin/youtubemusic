@@ -88,7 +88,7 @@ Change the respective colors in the css file you chose to these values:
 
 #### For [Youtube Music Desktop App (ytmdesktop)](https://github.com/ytmdesktop/ytmdesktop) or Stylus
 
-Paste this after the theme of choice (ytmdesktop), or within `html:not(.style-scope)`:
+Paste this after the theme of choice (ytmdesktop), or within `html:not(.style-scope)` (Stylus):
 
 ```css
     --ctp-base: #020202; !important;
