@@ -734,118 +734,405 @@ tp-yt-paper-item.category-menu-item.style-scope.ytmusic-settings-page.iron-selec
 
 yt-formatted-string.tab.style-scope.ytmusic-item-section-tab-renderer
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 ytmusic-item-section-tab-renderer.iron-selected .tab.ytmusic-item-section-tab-renderer
 {
-    color: var(--ctp-text) !important;
-    border-bottom: 2px solid var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
+  border-bottom: 2px solid var(--ctp-text) !important;
 }
 
 ytmusic-item-section-tabs-container.style-scope.ytmusic-item-section-tabbed-header-renderer
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 div#end-items.style-scope.ytmusic-item-section-tabbed-header-renderer
 {
-    border-top: 1px solid var(--ctp-base) !important;
+  border-top: 1px solid var(--ctp-base) !important;
 }
 
 ytmusic-dropdown-item-renderer.style-scope.ytmusic-dropdown-renderer
 {
-    background-color: var(--ctp-base) !important;
-    color: var(--ctp-text) !important;
+  background-color: var(--ctp-base) !important;
+  color: var(--ctp-text) !important;
 }
 
 ytmusic-dropdown-item-renderer.style-scope.ytmusic-dropdown-renderer.iron-selected
 {
-    background-color: var(--ctp-mantle) !important;
-    color: var(--ctp-text) !important;
+  background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
 }
 
 yt-formatted-string.label.style-scope.ytmusic-dropdown-item-renderer
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 ytmusic-dropdown-renderer.style-scope.ytmusic-item-section-tabbed-header-renderer
 {
-    color: var(--ctp-text) !important;
-    background-color: var(--ctp-base) !important;
-    border: 1px solid var(--ctp-accent) !important;
+  color: var(--ctp-text) !important;
+  background-color: var(--ctp-base) !important;
+  border: 1px solid var(--ctp-accent) !important;
 }
 
 input.style-scope.tp-yt-paper-input
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 yt-formatted-string.flex-column.style-scope.ytmusic-responsive-list-item-renderer
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 yt-formatted-string.title.style-scope.ytmusic-responsive-list-item-renderer
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 yt-icon.tab-icon.style-scope.ytmusic-message-renderer
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 yt-formatted-string.text.style-scope.ytmusic-message-renderer
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 yt-formatted-string.subtext.style-scope.ytmusic-message-renderer
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 div#header.style-scope.ytmusic-item-section-renderer
 {
-    border-bottom: 1px solid var(--ctp-base) !important;
-    box-shadow: none !important;
+  border-bottom: 1px solid var(--ctp-base) !important;
+  box-shadow: none !important;
 }
 
 ytmusic-background-overlay-renderer#background.style-scope.ytmusic-item-thumbnail-overlay-renderer
 {
-    --ytmusic-background-overlay-background: linear-gradient(var(--ctp-base), #00000000) !important;
+  --ytmusic-background-overlay-background: linear-gradient(var(--ctp-base), #00000000) !important;
 }
 
 yt-formatted-string#suggestion-cell-0x0.title.style-scope.ytmusic-search-suggestion
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 yt-formatted-string#suggestion-cell-1x0.title.style-scope.ytmusic-search-suggestion
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 yt-formatted-string#suggestion-cell-2x0.title.style-scope.ytmusic-search-suggestion
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 yt-formatted-string#suggestion-cell-3x0.title.style-scope.ytmusic-search-suggestion
 {
-    color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 ytmusic-search-box.style-scope.ytmusic-nav-bar
 {
-    border: 1px solid var(--ctp-mantle) !important;
+  border: 1px solid var(--ctp-mantle) !important;
 }
 
 img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/media/ytm/images/pbg/create-playlist-@210.png"]
 {
-   content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/mocha-playlist.png") !important;
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/mocha-playlist.png") !important;
+}
+
+ytmusic-tabs#tabs.style-scope.ytmusic-tabbed-search-results-renderer.stuck
+{
+  background-color: var(--ctp-base) !important;
+  box-shadow: none !important;
+}
+
+div#tabs.tab-container.style-scope.ytmusic-tabs
+{
+  border-bottom: none !important;
+}
+
+yt-formatted-string.tab.selected.style-scope.ytmusic-tabs
+{
+  color: var(--ctp-text) !important;
+  border-bottom: 2px solid var(--ctp-text) !important;
+}
+
+yt-formatted-string.tab.style-scope.ytmusic-tabs
+{
+  color: var(--ctp-text) !important;
+}
+
+span.italic.style-scope.yt-formatted-string
+{
+  color: var(--ctp-accent) !important;
+}
+
+yt-formatted-string#corrected.style-scope.yt-search-query-correction
+{
+  color: var(--ctp-text) !important;
+}
+
+a.yt-simple-endpoint.style-scope.ytmusic-chip-cloud-chip-renderer
+{
+  border: 1px solid var(--ctp-accent) !important;
+}
+
+yt-formatted-string.title.style-scope.ytmusic-visual-header-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#text.style-scope.yt-button-renderer.style-dark-on-white
+{
+  color: var(--ctp-base) !important;
+}
+
+div.gradient-container.style-scope.ytmusic-visual-header-renderer
+{
+  background: var(--ctp-base) !important;
+}
+
+tp-yt-paper-icon-button#next-items-button.next-items-button.style-scope.ytmusic-carousel-shelf-renderer
+{
+  border: solid 1px var(--ctp-accent) !important;
+}
+
+tp-yt-paper-icon-button#previous-items-button.previous-items-button.style-scope.ytmusic-carousel-shelf-renderer
+{
+  border: solid 1px var(--ctp-accent) !important;
+}
+
+tp-yt-paper-toggle-button[checked]:not([disabled]) .toggle-bar.tp-yt-paper-toggle-button
+{
+  background-color: var(--ctp-accent) !important;
+}
+
+tp-yt-paper-toggle-button[checked]:not([disabled]) .toggle-button.tp-yt-paper-toggle-button
+{
+  background-color: var(--ctp-accent) !important;
+}
+
+.toggle-bar.tp-yt-paper-toggle-button
+{
+  background-color: var(--ctp-text) !important;
+}
+
+.toggle-button.tp-yt-paper-toggle-button
+{
+  background-color: var(--ctp-text) !important;
+}
+
+.items.ytmusic-setting-category-collection-renderer>*.ytmusic-setting-category-collection-renderer
+{
+  border-bottom: none !important;
+}
+
+.top-bar.ytmusic-settings-page
+{
+  border-bottom: none;
+}
+
+div.style-scope.ytmusic-setting-single-option-menu-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+span.style-scope.ytmusic-setting-single-option-menu-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+div.unfocused-line.style-scope.tp-yt-paper-input-container
+{
+  background-color: var(--ctp-text) !important;
+}
+
+.focused-line.tp-yt-paper-input-container
+{
+  border-color: var(--ctp-accent) !important;
+}
+
+tp-yt-iron-icon.style-scope.tp-yt-paper-dropdown-menu
+{
+  color: var(--ctp-text) !important;
+}
+
+ytd-multi-page-menu-renderer.style-scope.ytd-multi-page-menu-renderer
+{
+  background: var(--ctp-base) !important;
+}
+
+ytd-simple-menu-header-renderer.style-scope.ytd-multi-page-menu-renderer
+{
+  background-color: var(--ctp-base) !important;
+}
+
+yt-icon.style-scope.ytd-button-renderer
+{
+  fill: var(--ctp-text) !important;
+}
+
+yt-formatted-string.style-scope.ytd-simple-menu-header-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#email.style-scope.ytd-google-account-header-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#name.style-scope.ytd-google-account-header-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.style-scope.ytd-account-item-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.style-scope.ytd-account-item-section-header-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+ytd-account-item-renderer[enable-ring-for-active-account] yt-img-shadow.ytd-account-item-renderer
+{
+  border: 2px solid var(--ctp-accent) !important;
+}
+
+ytmusic-player[player-ui-state_=MINIPLAYER] .song-media-controls.ytmusic-player
+{
+  background: linear-gradient(var(--ctp-base) 20%, #00000000 100%) !important;
+}
+
+#thumbnail-corner-overlay.ytmusic-two-row-item-renderer>ytmusic-thumbnail-renderer.ytmusic-two-row-item-renderer
+{
+  color: var(--ctp-text) !important;
+  border: 1px solid var(--ctp-text) !important;
+}
+
+.container.ytmusic-custom-index-column-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+ytmusic-custom-index-column-renderer[icon-color-style=CUSTOM_INDEX_COLUMN_ICON_COLOR_STYLE_GREY] .icon.ytmusic-custom-index-column-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+ytmusic-custom-index-column-renderer[icon-color-style=CUSTOM_INDEX_COLUMN_ICON_COLOR_STYLE_GREEN] .icon.ytmusic-custom-index-column-renderer
+{
+  color: var(--ctp-green) !important;
+}
+
+ytmusic-custom-index-column-renderer[icon-color-style=CUSTOM_INDEX_COLUMN_ICON_COLOR_STYLE_RED] .icon.ytmusic-custom-index-column-renderer
+{
+  color: var(--ctp-red) !important;
+}
+
+button#button.style-scope.ytmusic-sort-filter-button-renderer
+{
+  color: var(--ctp-text) !important;
+  background-color: var(--ctp-base) !important;
+  border: 1px solid var(--ctp-accent) !important;
+}
+
+#container.ytmusic-multi-select-menu-renderer
+{
+  border: 1px solid var(--ctp-accent) !important;
+  background: var(--ctp-base) !important;
+}
+
+#items.ytmusic-multi-select-menu-renderer
+{
+  background: var(--ctp-base) !important;
+}
+
+yt-formatted-string.text.style-scope.ytmusic-menu-title-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.text.style-scope.ytmusic-multi-select-menu-item-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+.title.ytmusic-setting-action-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+.summary.ytmusic-setting-action-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.primary-text.style-scope.ytmusic-tastebuilder-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.secondary-text.style-scope.ytmusic-tastebuilder-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.primary-text.style-scope.ytmusic-tastebuilder-item-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+div.overlay-effect.style-scope.ytmusic-tastebuilder-item-renderer
+{
+  background: linear-gradient(var(--ctp-base) 0%, #00000000 100%) !important;
+  color: var(--ctp-base) !important;
+}
+
+yt-icon.ytmusic-tastebuilder-item-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-button-renderer #button.yt-button-renderer
+{
+  color: var(--ctp-base) !important;
+}
+
+.buttons.ytmusic-tastebuilder-renderer
+{
+  background: var(--ctp-mantle) !important;
+}
+
+input.ytmusic-search-box, #placeholder.ytmusic-search-box
+{
+  color: var(--ctp-text) !important;
+}
+
+ytmusic-toggle-button-renderer #button.ytmusic-toggle-button-renderer
+{
+  background-color: var(--ctp-text) !important;
+}
+
+ytmusic-responsive-list-item-renderer[show-checkbox] yt-checkbox-renderer.ytmusic-responsive-list-item-renderer
+{
+  --yt-spec-text-primary: var(--ctp-accent) !important;
+}
+
+#input::placeholder
+{
+  color: var(--ctp-text) !important;
 }
 
 /* Client-specific changes */
