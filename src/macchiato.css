@@ -1281,6 +1281,16 @@ tp-yt-iron-overlay-backdrop.opened
   background: var(--ctp-crust) !important;
 }
 
+iron-label#iron-label-1.title.style-scope.ytmusic-tab-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+div.subtitle.style-scope.ytmusic-tab-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
 /* Client-specific changes */
 
 div.cet-titlebar.cet-linux.inactive
