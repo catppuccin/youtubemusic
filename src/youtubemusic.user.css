@@ -6,7 +6,7 @@
 @author         Catppuccin
 @preprocessor   stylus
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
-@var select accent-color "Accent" ["Rosewater*", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Blue", "Sapphire", "Sky", "Lavender", "White"]
+@var select accent-color "Accent" ["Rosewater*", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Blue", "Sapphire", "Sky", "Lavender", "Text"]
 ==/UserStyle== */
 
 @-moz-document domain("music.youtube.com") {
@@ -50,7 +50,7 @@
           --ctp-accent: var(--ctp-sky) !important;
       } else if (accent-color=="Lavender") {
           --ctp-accent: var(--ctp-lavender) !important;
-      }  else if (accent-color=="White") {
+      }  else if (accent-color=="Text") {
           --ctp-accent: var(--ctp-text) !important;
       }
     }
