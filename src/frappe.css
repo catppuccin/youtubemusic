@@ -645,12 +645,6 @@ yt-icon.icon.style-scope.ytmusic-toggle-menu-service-item-renderer
   fill: var(--ctp-accent) !important;
 }
 
-yt-icon, .yt-icon-container.yt-icon {
-	width: 80% !important;
-	height: 80% !important;
-	padding-left: 10% !important;
-}
-
 yt-formatted-string#label.style-scope.ytd-compact-link-renderer
 {
   color: var(--ctp-text) !important;
