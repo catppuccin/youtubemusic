@@ -1220,11 +1220,6 @@ ytd-account-section-list-renderer.style-scope.ytd-multi-page-menu-renderer
   border-top: none !important;
 }
 
-yt-img-shadow
-{
-  background: var(--ctp-text) !important;
-}
-
 ytmusic-responsive-list-item-renderer.style-scope.ytmusic-shelf-renderer
 {
   border-bottom: none !important;
@@ -1289,6 +1284,65 @@ iron-label#iron-label-1.title.style-scope.ytmusic-tab-renderer
 div.subtitle.style-scope.ytmusic-tab-renderer
 {
   color: var(--ctp-text) !important;
+}
+
+div.gradient-container.style-scope.ytmusic-immersive-header-renderer
+{
+  background: linear-gradient(360deg, var(--ctp-base) 9.89%, #00000000 100%) !important;
+}
+
+yt-unlimited-page-header-renderer.style-scope.ytmusic-item-section-renderer
+{
+  background: var(--ctp-base) !important;
+}
+
+yt-formatted-string#header.style-scope.yt-music-pass-feature-info-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#description.style-scope.yt-music-pass-feature-info-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#header.style-scope.yt-music-pass-small-feature-info-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#description.style-scope.yt-music-pass-small-feature-info-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#subtitle.style-scope.yt-unlimited-page-header-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promos/growth/ytm_lp2_icon_feature_headset_84x84.png"]
+{
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/macchiatoprem1.png") !important;
+  background-color: var(--ctp-accent) !important;
+}
+
+img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promos/growth/ytm_lp2_icon_feature_play_84x84.png"]
+{
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/macchiatoprem2.png") !important;
+  background-color: var(--ctp-accent) !important;
+}
+
+img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promos/growth/ytm_lp2_icon_feature_download_84x84.png"]
+{
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/macchiatoprem3.png") !important;
+  background-color: var(--ctp-accent) !important;
+}
+
+img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promos/growth/ytm_lp2_logo_desktop_552x71.png"]
+{
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/macchiatopremtitle.png") !important;
+  background-color: var(--ctp-accent) !important;
 }
 
 /* Client-specific changes */
