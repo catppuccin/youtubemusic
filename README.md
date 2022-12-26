@@ -102,10 +102,18 @@ You can find the references to the available colors you can change in the beginn
 
 ## 💝 Thanks to
 
+### Current maintainer
+
 - [kerichdev](https://github.com/kerichdev)
-- [rubyowo](https://github.com/rubyowo)
+
+### Contributions
+
 - [Anubis](https://github.com/anubisnekhet)
 - [OceanicSquirrel](https://github.com/OceanicSquirrel)
+
+### Previous maintainer
+
+- [rubyowo](https://github.com/rubyowo)
 
 &nbsp;
 
