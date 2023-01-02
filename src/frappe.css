@@ -1350,6 +1350,155 @@ img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promo
   background-color: var(--ctp-accent) !important;
 }
 
+ytmusic-multi-select-menu-bar.style-scope.ytmusic-dialog
+{
+  background-color: var(--ctp-mantle) !important;
+}
+
+ytmusic-dialog
+{
+  background-color: var(--ctp-accent) !important;
+}
+
+yt-formatted-string.style-scope.ytmusic-multi-select-menu-bar
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-checkbox-renderer.fixed-column.MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH.style-scope.ytmusic-responsive-list-item-renderer
+{
+  color: var(--ctp-accent) !important;
+}
+
+button.yt-icon-button > yt-icon
+{
+  fill: var(--ctp-accent) !important;
+}
+
+ytmusic-unified-share-panel-renderer.style-scope.ytmusic-popup-container
+{
+  background-color: var(--ctp-mantle) !important;
+}
+
+tp-yt-paper-dialog.style-scope.ytmusic-popup-container
+{
+  background-color: var(--ctp-mantle) !important;
+}
+
+div#title.style-scope.yt-share-target-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+h2#title.style-scope.yt-share-panel-title-v15-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+input#share-url.style-scope.yt-copy-link-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+div#bar.style-scope.yt-copy-link-renderer
+{
+  background-color: var(--ctp-crust) !important;
+  border: 1px var(--ctp-accent) solid !important;
+}
+
+.scroll-button.yt-third-party-share-target-section-renderer
+{
+  background-color: var(--ctp-crust) !important;
+}
+
+ytmusic-playlist-form.style-scope.ytmusic-dialog
+{
+  background-color: var(--ctp-mantle) !important;
+}
+
+ytmusic-playlist-form[tabbed-ui-enabled] iron-pages.ytmusic-playlist-form .content.ytmusic-playlist-form
+{
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+tp-yt-paper-button.submit-button.style-scope.ytmusic-playlist-form
+{
+  color: var(--ctp-mantle) !important;
+  background-color: var(--ctp-accent) !important;
+}
+
+tp-yt-paper-button.cancel-button.style-scope.ytmusic-playlist-form
+{
+  color: var(--ctp-accent) !important;
+}
+
+div#caption.style-scope.yt-toggle-form-field-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+.floated-label-placeholder.tp-yt-paper-input-container
+{
+  color: var(--ctp-text) !important;
+}
+
+ytmusic-dropdown-renderer[dropdown-style=underline] .icon.ytmusic-dropdown-renderer
+{
+  color: var(--ctp-accent) !important;
+}
+
+.icon.ytmusic-dropdown-item-renderer
+{
+  color: var(--ctp-accent) !important;
+}
+
+yt-formatted-string.description.style-scope.ytmusic-dropdown-item-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.headline.style-scope.ytmusic-add-to-playlist-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string.section-heading.style-scope.ytmusic-add-to-playlist-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#title.style-scope.ytmusic-playlist-add-to-option-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+ytmusic-add-to-playlist-renderer
+{
+  background-color: var(--ctp-mantle) !important;
+  border: 1px solid var(--ctp-accent) !important;
+}
+
+ytmusic-carousel-shelf-renderer.ytmusic-add-to-playlist-renderer:not(:empty)
+{
+  border-bottom: none !important;
+}
+
+.top-bar.ytmusic-add-to-playlist-renderer
+{
+  border-bottom: none !important;
+}
+
+yt-formatted-string.byline.style-scope.ytmusic-playlist-add-to-option-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+img#img.style-scope.yt-img-shadow[src="https://lh3.googleusercontent.com/wr28amLh-pMk4vmrYv_Orhly8DTtdvZJFuLwmXG5RNvZJjGlFe_WMnKp4pWlZI1gL7ihQn-xZuzZ0A6VZZbv2Z-iTEH3dpjn=w88-h88"]
+{
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/frappeplaylistempty.png") !important;
+}
+
 /* Client-specific changes */
 
 div.cet-titlebar.cet-linux.inactive
