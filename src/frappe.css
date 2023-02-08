@@ -235,12 +235,6 @@ ytmusic-data-bound-top-level-menu-item.ytmusic-data-bound-menu-renderer:not(:fir
   border-radius: 5px !important;
 }
 
-yt-button-renderer.watch-button.ytmusic-menu-renderer
-{
-  color: var(--ctp-base) !important;
-  background-color: var(--ctp-accent) !important;
-}
-
 #top-level-buttons.ytmusic-menu-renderer > .outline-button.ytmusic-menu-renderer, .edit-playlist-button.ytmusic-menu-renderer, ytmusic-toggle-button-renderer.ytmusic-menu-renderer
 {
   --yt-button-color: var(--ctp-base) !important;
@@ -1122,7 +1116,7 @@ input.ytmusic-search-box, #placeholder.ytmusic-search-box
 
 ytmusic-toggle-button-renderer #button.ytmusic-toggle-button-renderer
 {
-  background-color: var(--ctp-text) !important;
+  color: var(--ctp-text) !important;
 }
 
 ytmusic-responsive-list-item-renderer[show-checkbox] yt-checkbox-renderer.ytmusic-responsive-list-item-renderer
@@ -1558,6 +1552,30 @@ ytmusic-menu-item-divider-renderer.style-scope.ytmusic-multi-select-menu-rendere
 yt-formatted-string.title.style-scope.ytmusic-setting-single-option-menu-renderer
 {
   color: var(--ctp-text) !important;
+}
+
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text
+{
+  color: var(--ctp-accent) !important;
+}
+
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled
+{
+  color: var(--ctp-base) !important;
+  background-color: var(--ctp-accent) !important;
+}
+
+.yt-spec-touch-feedback-shape--touch-response .yt-spec-touch-feedback-shape__fill
+{
+  background-color: var(--ctp-text) !important;
+}
+
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--outline
+{
+  color: var(--ctp-accent) !important;
+  border-color: var(--ctp-accent) !important;
+  height: 40px !important;
+  border-radius: 36px !important;
 }
 
 /* Client-specific changes */
