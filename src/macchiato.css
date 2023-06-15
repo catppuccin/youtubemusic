@@ -1606,6 +1606,11 @@ ytmusic-av-toggle[toggle-disabled] .video-button.ytmusic-av-toggle
   background-color: var(--ctp-crust) !important;
 }
 
+.yt-spec-button-shape-next--call-to-action-inverse.yt-spec-button-shape-next--text
+{
+  color: var(--ctp-accent) !important;
+}
+
 /* Client-specific changes */
 
 div.cet-titlebar.cet-linux.inactive
