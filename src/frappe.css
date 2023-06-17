@@ -1611,6 +1611,48 @@ ytmusic-av-toggle[toggle-disabled] .video-button.ytmusic-av-toggle
   color: var(--ctp-accent) !important;
 }
 
+ytmusic-guide-entry-renderer
+{
+  color: var(--ctp-accent) !important;
+}
+
+ytmusic-guide-entry-renderer[active] tp-yt-paper-item.ytmusic-guide-entry-renderer
+{
+  background-color: var(--ctp-base) !important;
+}
+
+ytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app
+{
+  background: var(--ctp-mantle) !important;
+  border: none !important;
+}
+
+#divider.ytmusic-guide-section-renderer
+{
+  border: none !important;
+}
+
+.title.ytmusic-guide-entry-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal
+{
+  color: var(--ctp-text) !important;
+  background-color: var(--ctp-base) !important;
+}
+
+ytmusic-guide-entry-renderer:not([is-primary]) .subtitle.ytmusic-guide-entry-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+ytmusic-guide-renderer[is-collapsed]
+{
+  background: var(--ctp-mantle) !important;
+}
+
 /* Client-specific changes */
 
 div.cet-titlebar.cet-linux.inactive
