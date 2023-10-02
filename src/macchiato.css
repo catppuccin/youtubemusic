@@ -25,6 +25,7 @@ html:not(.style-scope)
 
   --ytmusic-scrollbar-width: 0px !important;
   --ytd-scrollbar-width: 0px !important;
+  --yt-spec-commerce-filled-hover: var(--ctp-accent) !important;
   scrollbar-width: none !important;
 }
 
@@ -1651,6 +1652,32 @@ ytmusic-guide-entry-renderer:not([is-primary]) .subtitle.ytmusic-guide-entry-ren
 ytmusic-guide-renderer[is-collapsed]
 {
   background: var(--ctp-mantle) !important;
+}
+
+yt-start-at-renderer.yt-third-party-network-section-renderer
+{
+  padding-top: 0 !important;
+  border-top: none !important;
+}
+
+yt-formatted-string.yt-start-at-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+#checkbox.tp-yt-paper-checkbox
+{
+  border-color: var(--ctp-text) !important;
+}
+
+#checkbox.checked.tp-yt-paper-checkbox
+{
+  background-color: var(--ctp-text) !important;
+}
+
+.unfocused-line.tp-yt-paper-input-container
+{
+  border-bottom: none !important;
 }
 
 /* Client-specific changes */
