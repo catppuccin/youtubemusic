@@ -45,7 +45,7 @@
 1. Navigate to the settings of the Youtube Music Desktop App.
 2. Go to the appearances tab and turn on custom theme.
 3. Click on the pencil icon to open up the editor window.
-4. Paste in the flavour import for your flavour and press the save button.
+4. Copy and paste in the flavour's css file contents for your flavour and press the save button.
 
 ### The code
 
