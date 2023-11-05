@@ -19,9 +19,6 @@ html:not(.style-scope)
   --ctp-mantle: #e6e9ef;
   --ctp-crust: #dce0e8;
 
-  --ytmusic-nav-bar: #e6e9ef;
-  --ytmusic-overlay-text-secondary: #4c4f69;
-
   --ctp-accent: var(--ctp-mauve);
 
   --unthemed-yet: inherit !important;
@@ -832,6 +829,21 @@ yt-formatted-string#suggestion-cell-2x0.title.style-scope.ytmusic-search-suggest
 }
 
 yt-formatted-string#suggestion-cell-3x0.title.style-scope.ytmusic-search-suggestion
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#suggestion-cell-4x0.title.style-scope.ytmusic-search-suggestion
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#suggestion-cell-5x0.title.style-scope.ytmusic-search-suggestion
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#suggestion-cell-6x0.title.style-scope.ytmusic-search-suggestion
 {
   color: var(--ctp-text) !important;
 }
@@ -1697,12 +1709,65 @@ div.cet-titlebar.cet-linux
   color: var(--ctp-text) !important;
 }
 
-ytmusic-search-box[is-bauhaus-sidenav-enabled] #suggestion-list.ytmusic-search-box
+/* Custom fork changes */
+
+ytmusic-app-layout[is-bauhaus-sidenav-enabled] #nav-bar-background.ytmusic-app-layout
 {
-  padding: 0px 0 !important;
+  background: var(--ctp-mantle) !important;
+}
+
+ytmusic-app-layout[is-bauhaus-sidenav-enabled] #mini-guide-background.ytmusic-app-layout
+{
+  background: var(--ctp-mantle) !important;
+}
+
+.title.ytmusic-queue-header-renderer
+{
+  color: var(--ctp-text) !important;
 }
 
 .subtitle.ytmusic-queue-header-renderer
 {
   color: var(--ctp-text) !important;
+}
+
+.content-info-wrapper.ytmusic-player-bar .byline.ytmusic-player-bar
+{
+  color: var(--ctp-mauve) !important;
+}
+
+.song-button.ytmusic-av-toggle, .video-button.ytmusic-av-toggle
+{
+  background-color: var(--ctp-crust) !important;
+  color: var(--ctp-mauve) !important;
+}
+
+tp-yt-paper-toast
+{
+  background: var(--ctp-mantle) !important;
+}
+
+.logo.ytmusic-logo
+{
+  content: url("https://storage.googleapis.com/pe-portal-consumer-prod-wagtail-static/original_images/yt_music_full_rgb_black.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=wagtail%40pe-portal-consumer-prod.iam.gserviceaccount.com%2F20231105%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20231105T025917Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dyt_music_full_rgb_black.png&X-Goog-Signature=95840c75482f23e508522e4367f784d4d7c7d26a04e4da8e8d4bcbf87f2df92a93a54d14a7c9dc1c570ab6fe71b01fd581291dc1d2810cda8f1f1e154a8faea40fa46ceb738302fe3d14d31d125208d9c147e5d354347c2619033f9b735b50751d552bab428b8ee37f50a59bef6066a15143a5a476de7104253a4c366d24d8eeb16075ce563fe0428be9d022701afeb15058d3d7abd388e6b526e51fe66be59c42cabbce5c2bcc9642d699ff9fcc438071cc807cff23015410d7bf87ba0aeccdc304b65685d5124e8e87268946fd9087343a7dc6b931cbbff7b73ca136412025c1a53f3d684825e0a323ae950e915f77f7312da0bd8c28e0cd79fce24a661ff5") !important;
+}
+
+ytmusic-search-box[is-bauhaus-sidenav-enabled] #suggestion-list.ytmusic-search-box
+{
+  padding: 0px !important;
+}
+
+.header.ytmusic-card-shelf-header-basic-renderer>yt-formatted-string.ytmusic-card-shelf-header-basic-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+.immersive-background.ytmusic-card-shelf-renderer:before
+{
+  background-image: linear-gradient(180deg, var(--ctp-base) 0%, var(--ctp-crust) 100%) !important;
+}
+
+ytmusic-responsive-list-item-renderer.ytmusic-card-shelf-renderer
+{
+  background-color: transparent !important;
 }
