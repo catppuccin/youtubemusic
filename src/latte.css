@@ -833,21 +833,6 @@ yt-formatted-string#suggestion-cell-3x0.title.style-scope.ytmusic-search-suggest
   color: var(--ctp-text) !important;
 }
 
-yt-formatted-string#suggestion-cell-4x0.title.style-scope.ytmusic-search-suggestion
-{
-  color: var(--ctp-text) !important;
-}
-
-yt-formatted-string#suggestion-cell-5x0.title.style-scope.ytmusic-search-suggestion
-{
-  color: var(--ctp-text) !important;
-}
-
-yt-formatted-string#suggestion-cell-6x0.title.style-scope.ytmusic-search-suggestion
-{
-  color: var(--ctp-text) !important;
-}
-
 ytmusic-search-box.style-scope.ytmusic-nav-bar
 {
   border: 1px solid var(--ctp-mantle) !important;
@@ -1770,4 +1755,19 @@ ytmusic-search-box[is-bauhaus-sidenav-enabled] #suggestion-list.ytmusic-search-b
 ytmusic-responsive-list-item-renderer.ytmusic-card-shelf-renderer
 {
   background-color: transparent !important;
+}
+
+yt-formatted-string#suggestion-cell-4x0.title.style-scope.ytmusic-search-suggestion
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#suggestion-cell-5x0.title.style-scope.ytmusic-search-suggestion
+{
+  color: var(--ctp-text) !important;
+}
+
+yt-formatted-string#suggestion-cell-6x0.title.style-scope.ytmusic-search-suggestion
+{
+  color: var(--ctp-text) !important;
 }
