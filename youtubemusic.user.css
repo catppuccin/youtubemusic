@@ -1,0 +1,25 @@
+/*==UserStyle==
+@name           Youtube Music Catppuccin
+@namespace      github.com/catppuccin/youtubemusic
+@version        0.4.0
+@description    Soothing pastel theme for Youtube Music
+@author         Catppuccin
+@preprocessor   stylus
+
+@var select lightFlavor "Light Flavor" ["latte:Latte*", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha"]
+@var select darkFlavor "Dark Flavor" ["latte:Latte", "frappe:Frappé", "macchiato:Macchiato", "mocha:Mocha*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve", "red:Red", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire*", "sky:Sky", "lavender:Lavender", "subtext0:Gray"]
+==/UserStyle== */
+
+@-moz-document domain("music.youtube.com") {
+
+    @import url("https://catppuccin.github.io/youtubemusic/src/" + lightFlavor + ".css");
+
+    [dark="true"] {
+      @import url("https://catppuccin.github.io/youtubemusic/src/" + darkFlavor + ".css");
+    }
+
+    html:not(.style-scope) {    
+      --ctp-accent: var(--ctp- + accentColor) !important;
+    }
+}
