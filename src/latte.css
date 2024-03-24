@@ -1781,15 +1781,10 @@ ytmusic-app-layout[is-bauhaus-sidenav-enabled] #mini-guide-background.ytmusic-ap
   color: var(--ctp-text) !important;
 }
 
-.content-info-wrapper.ytmusic-player-bar .byline.ytmusic-player-bar
-{
-  color: var(--ctp-mauve) !important;
-}
-
 .song-button.ytmusic-av-toggle, .video-button.ytmusic-av-toggle
 {
   background-color: var(--ctp-crust) !important;
-  color: var(--ctp-mauve) !important;
+  color: var(--ctp-accent) !important;
 }
 
 tp-yt-paper-toast
