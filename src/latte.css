@@ -1741,6 +1741,10 @@ ytmusic-player-page[is-mweb-modernization-enabled][player-page-ui-state=TABS_VIE
   color: var(--ctp-text) !important;
 }
 
+ytmusic-player-page[is-mweb-modernization-enabled] .background-gradient.ytmusic-player-page {
+  background: var(--ctp-base) !important;
+}
+
 /* Client-specific changes */
 
 div.cet-titlebar.cet-linux.inactive
