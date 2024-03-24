@@ -1745,6 +1745,11 @@ ytmusic-player-page[is-mweb-modernization-enabled] .background-gradient.ytmusic-
   background: var(--ctp-base) !important;
 }
 
+ytmusic-guide-entry-renderer:not([is-primary]) #play-button.ytmusic-guide-entry-renderer {
+  background-color: none !important;
+  color: none !important;
+}
+
 /* Client-specific changes */
 
 div.cet-titlebar.cet-linux.inactive
