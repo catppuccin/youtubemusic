@@ -13,10 +13,8 @@
 ==/UserStyle== */
 
 @-moz-document domain("music.youtube.com") {
-    @import (css) url("https://catppuccin.github.io/youtubemusic/src/@{lightFlavor}.css") (prefers-color-scheme: light);
-    @import (css) url("https://catppuccin.github.io/youtubemusic/src/@{darkFlavor}.css") (prefers-color-scheme: dark);
-  
-  @accent: escape(--ctp-@accentColor);
+  @import (css) url("https://catppuccin.github.io/youtubemusic/src/@{lightFlavor}.css") (prefers-color-scheme: light);
+  @import (css) url("https://catppuccin.github.io/youtubemusic/src/@{darkFlavor}.css") (prefers-color-scheme: dark);
     
   html:not(.style-scope) {
     @accent: "--ctp-@{accentColor}";
