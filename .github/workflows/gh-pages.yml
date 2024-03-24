@@ -16,6 +16,8 @@ jobs:
         with:
           enable_jekyll: false
           github_token: "${{ secrets.GITHUB_TOKEN }}"
+          publish_branch: "gh-pages"
+          publish_dir: "./gh-pages"
           user_email: "github-actions[bot]@users.noreply.github.com"
           user_name: "github-actions[bot]"
           cname: "youtubemusic.catppuccin.com"
