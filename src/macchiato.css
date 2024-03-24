@@ -1680,6 +1680,67 @@ yt-formatted-string.yt-start-at-renderer
   border-bottom: none !important;
 }
 
+ytmusic-player-page[is-mweb-modernization-enabled][player-page-ui-state=TABS_VIEW] #side-panel.ytmusic-player-page {
+  background: var(--ctp-base) !important;
+}
+
+ytmusic-player-page[is-mweb-modernization-enabled] .side-panel.ytmusic-player-page {
+  background: var(--ctp-base) !important;
+}
+
+ytmusic-player-page[is-mweb-modernization-enabled][player-page-ui-state=TABS_VIEW] #main-panel.ytmusic-player-page {
+  background: var(--ctp-base) !important;
+}
+
+.content-info-wrapper.ytmusic-player-bar .byline.ytmusic-player-bar {
+  color: var(--ctp-accent) !important;
+}
+
+.title.ytmusic-player-controls {
+  color: var(--ctp-text) !important;
+}
+
+.byline.ytmusic-player-controls {
+  color: var(--ctp-accent) !important;
+}
+
+.play-pause-button-wrapper.ytmusic-player-controls {
+  background: var(--ctp-mantle) !important;
+}
+
+#primaryProgress.tp-yt-paper-progress {
+  background-color: var(--ctp-accent) !important;
+}
+
+#secondaryProgress.tp-yt-paper-progress {
+  background-color: var(--ctp-crust) !important;
+}
+
+#progressContainer.tp-yt-paper-progress, .indeterminate.tp-yt-paper-progress::after {
+  background-color: var(--ctp-mantle) !important;
+}
+
+.slider-knob-inner.tp-yt-paper-slider {
+  background-color: var(--ctp-accent) !important;
+  border: var(--ctp-accent) 2px solid !important;
+}
+
+.current-time.ytmusic-player-controls, .total-time.ytmusic-player-controls {
+  color: var(--ctp-text) !important;
+}
+
+.title.ytmusic-queue-header-renderer {
+  color: var(--ctp-text) !important;
+}
+
+.subtitle.ytmusic-queue-header-renderer {
+  color: var(--ctp-text) !important;
+}
+
+.autoplay.ytmusic-tab-renderer .title.ytmusic-tab-renderer {
+  color: var(--ctp-text) !important;
+}
+
 /* Client-specific changes */
 
 div.cet-titlebar.cet-linux.inactive
