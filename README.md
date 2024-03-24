@@ -51,13 +51,13 @@
 
 ```css
 /* latte */
-@import url("https://catppuccin.github.io/youtubemusic/src/latte.css");
+@import url("https://youtubemusic.catppuccin.com/src/latte.css");
 /* frappe */
-@import url("https://catppuccin.github.io/youtubemusic/src/frappe.css");
+@import url("https://youtubemusic.catppuccin.com/src/frappe.css");
 /* macchiato */
-@import url("https://catppuccin.github.io/youtubemusic/src/macchiato.css");
+@import url("https://youtubemusic.catppuccin.com/src/macchiato.css");
 /* mocha */
-@import url("https://catppuccin.github.io/youtubemusic/src/mocha.css");
+@import url("https://youtubemusic.catppuccin.com/src/mocha.css");
 
 /* if you want to change the accent color, paste this in aswell and change the hex code - or use one of the predefined colors with var(--ctp-'color') - e.g. var(--ctp-maroon) */
 html:not(.style-scope) {
