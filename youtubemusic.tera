@@ -1,33 +1,21 @@
+---
+accent: mauve
+whiskers:
+  version: 2.1.0
+  matrix:
+    - flavor
+  filename: "src/{{ flavor.identifier }}.css"
+---
+
+{%- set palette = flavor.colors -%}
+
 html:not(.style-scope)
 {
-  --ctp-rosewater: #dc8a78;
-  --ctp-flamingo: #dd7878;
-  --ctp-pink: #ea76cb;
-  --ctp-mauve: #8839ef;
-  --ctp-red: #d20f39;
-  --ctp-maroon: #e64553;
-  --ctp-peach: #fe640b;
-  --ctp-yellow: #df8e1d;
-  --ctp-green: #40a02b;
-  --ctp-teal: #179299;
-  --ctp-sky: #04a5e5;
-  --ctp-sapphire: #209fb5;
-  --ctp-blue: #1e66f5;
-  --ctp-lavender: #7287fd;
-  --ctp-text: #4c4f69;
-  --ctp-subtext1: #5c5f77;
-  --ctp-subtext0: #6c6f85;
-  --ctp-overlay2: #7c7f93;
-  --ctp-overlay1: #8c8fa1;
-  --ctp-overlay0: #9ca0b0;
-  --ctp-surface2: #acb0be;
-  --ctp-surface1: #bcc0cc;
-  --ctp-surface0: #ccd0da;
-  --ctp-base: #eff1f5;
-  --ctp-mantle: #e6e9ef;
-  --ctp-crust: #dce0e8;
+  {%- for _, color in palette %}
+  --ctp-{{ color.identifier }}: #{{ color.hex }};
+  {%- endfor %}
 
-  --ctp-accent: var(--ctp-mauve);
+  --ctp-accent: var(--ctp-{{ accent }});
 
   --unthemed-yet: inherit !important;
 
@@ -625,7 +613,7 @@ tp-yt-paper-slider#progress-bar.style-scope.ytmusic-player-bar
 
 img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/music/listening_review/HOME_RECAP_SHELF_AVATAR_BLACK_60x60.png"]
 {
-  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/latte.png") !important;
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/{{ flavor.identifier }}.png") !important;
 }
 
 ytmusic-player-expanding-menu#expanding-menu.style-scope.ytmusic-player-bar
@@ -848,7 +836,7 @@ ytmusic-search-box.style-scope.ytmusic-nav-bar
 
 img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/media/ytm/images/pbg/create-playlist-@210.png"]
 {
-  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/latte-playlist.png") !important;
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/{{ flavor.identifier }}-playlist.png") !important;
 }
 
 ytmusic-tabs#tabs.style-scope.ytmusic-tabbed-search-results-renderer.stuck
@@ -1331,25 +1319,25 @@ yt-formatted-string#subtitle.style-scope.yt-unlimited-page-header-renderer
 
 img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promos/growth/ytm_lp2_icon_feature_headset_84x84.png"]
 {
-  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/latteprem1.png") !important;
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/{{ flavor.identifier }}prem1.png") !important;
   background-color: var(--ctp-accent) !important;
 }
 
 img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promos/growth/ytm_lp2_icon_feature_play_84x84.png"]
 {
-  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/latteprem2.png") !important;
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/{{ flavor.identifier }}prem2.png") !important;
   background-color: var(--ctp-accent) !important;
 }
 
 img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promos/growth/ytm_lp2_icon_feature_download_84x84.png"]
 {
-  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/latteprem3.png") !important;
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/{{ flavor.identifier }}prem3.png") !important;
   background-color: var(--ctp-accent) !important;
 }
 
 img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promos/growth/ytm_lp2_logo_desktop_552x71.png"]
 {
-  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/lattepremtitle.png") !important;
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/{{ flavor.identifier }}premtitle.png") !important;
   background-color: var(--ctp-accent) !important;
 }
 
@@ -1499,7 +1487,7 @@ yt-formatted-string.byline.style-scope.ytmusic-playlist-add-to-option-renderer
 
 img#img.style-scope.yt-img-shadow[src="https://lh3.googleusercontent.com/wr28amLh-pMk4vmrYv_Orhly8DTtdvZJFuLwmXG5RNvZJjGlFe_WMnKp4pWlZI1gL7ihQn-xZuzZ0A6VZZbv2Z-iTEH3dpjn=w88-h88"]
 {
-  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/latteplaylistempty.png") !important;
+  content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/{{ flavor.identifier }}playlistempty.png") !important;
 }
 
 tp-yt-paper-toast#toast.style-scope.ytmusic-notification-text-renderer.paper-toast-open
