@@ -15,6 +15,14 @@ html:not(.style-scope)
   --ctp-blue: #8aadf4;
   --ctp-lavender: #b7bdf8;
   --ctp-text: #cad3f5;
+  --ctp-subtext1: #b8c0e0;
+  --ctp-subtext0: #a5adcb;
+  --ctp-overlay2: #939ab7;
+  --ctp-overlay1: #8087a2;
+  --ctp-overlay0: #6e738d;
+  --ctp-surface2: #5b6078;
+  --ctp-surface1: #494d64;
+  --ctp-surface0: #363a4f;
   --ctp-base: #24273a;
   --ctp-mantle: #1e2030;
   --ctp-crust: #181926;
