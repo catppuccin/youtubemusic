@@ -1306,12 +1306,12 @@ yt-unlimited-page-header-renderer.style-scope.ytmusic-item-section-renderer
 
 yt-formatted-string#header.style-scope.yt-music-pass-feature-info-renderer
 {
-  color: var(--ctp-text) !important;
+  color: var(--ctp-base) !important;
 }
 
 yt-formatted-string#description.style-scope.yt-music-pass-feature-info-renderer
 {
-  color: var(--ctp-text) !important;
+  color: var(--ctp-base) !important;
 }
 
 yt-formatted-string#header.style-scope.yt-music-pass-small-feature-info-renderer
