@@ -528,6 +528,12 @@ tp-yt-iron-icon.chromecast.style-scope.ytmusic-cast-button
   fill: var(--ctp-accent) !important;
 }
 
+tp-yt-paper-toast
+{
+  background: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+}
+
 ytd-multi-page-menu-renderer.style-scope.ytmusic-popup-container
 {
   color: var(--ctp-text) !important;
