@@ -581,11 +581,6 @@ a.yt-simple-endpoint.style-scope.ytmusic-responsive-list-item-renderer
 
 ytmusic-search-suggestions-section.style-scope.ytmusic-search-box
 {
-  border-top: 1px solid var(--ctp-accent) !important;
-}
-
-ytmusic-search-suggestions-section.style-scope.ytmusic-search-box
-{
   background: var(--ctp-base) !important;
 }
 
