@@ -585,8 +585,14 @@ div.background-gradient.style-scope.ytmusic-browse-response
 
 ytmusic-search-suggestion
 {
-  background: var(--ctp-base) !important;
+  color: var(--ctp-text) !important;
+  background: var(--ctp-mantle) !important;
   --iron-icon-fill-color: var(--ctp-accent) !important;
+}
+
+ytmusic-search-box[is-bauhaus-sidenav-enabled] #suggestion-list.ytmusic-search-box
+{
+  background: var(--ctp-mantle) !important;
 }
 
 a.yt-simple-endpoint.style-scope.ytmusic-responsive-list-item-renderer
@@ -596,12 +602,7 @@ a.yt-simple-endpoint.style-scope.ytmusic-responsive-list-item-renderer
 
 ytmusic-search-suggestions-section.style-scope.ytmusic-search-box
 {
-  border-top: 1px solid var(--ctp-accent) !important;
-}
-
-ytmusic-search-suggestions-section.style-scope.ytmusic-search-box
-{
-  background: var(--ctp-base) !important;
+  background: var(--ctp-mantle) !important;
 }
 
 div.search-box.style-scope.ytmusic-search-box
