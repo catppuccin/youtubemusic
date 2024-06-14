@@ -293,6 +293,10 @@ yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpo
   --paper-spinner-color: var(--yt-spec-themed-blue) !important;
 }
 
+yt-icon.icon.style-scope.ytmusic-play-button-renderer {
+	fill: var(--ctp-base) !important;
+}
+
 paper-icon-button.ytmusic-like-button-renderer
 {
   color: var(--ctp-text) !important;
@@ -528,6 +532,12 @@ tp-yt-iron-icon.chromecast.style-scope.ytmusic-cast-button
   fill: var(--ctp-accent) !important;
 }
 
+tp-yt-paper-toast
+{
+  background: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+}
+
 ytd-multi-page-menu-renderer.style-scope.ytmusic-popup-container
 {
   color: var(--ctp-text) !important;
@@ -560,6 +570,11 @@ yt-formatted-string.style-scope.ytmusic-shelf-renderer
   color: var(--ctp-text) !important;
 }
 
+yt-formatted-string.style-scope.ytmusic-menu-service-item-download-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
 yt-formatted-string.strapline.style-scope.ytmusic-shelf-renderer
 {
   color: var(--ctp-text) !important;
@@ -582,7 +597,8 @@ div.background-gradient.style-scope.ytmusic-browse-response
 
 ytmusic-search-suggestion
 {
-  background: var(--ctp-base) !important;
+  color: var(--ctp-text) !important;
+  background: var(--ctp-mantle) !important;
   --iron-icon-fill-color: var(--ctp-accent) !important;
 }
 
@@ -596,6 +612,11 @@ ytmusic-background-promo-renderer[renderer-style="full-height"] .promo-title.ytm
   color: var(--ctp-text) !important;
 }
 
+ytmusic-search-box[is-bauhaus-sidenav-enabled] #suggestion-list.ytmusic-search-box
+{
+  background: var(--ctp-mantle) !important;
+}
+
 a.yt-simple-endpoint.style-scope.ytmusic-responsive-list-item-renderer
 {
   color: var(--ctp-text) !important;
@@ -603,12 +624,7 @@ a.yt-simple-endpoint.style-scope.ytmusic-responsive-list-item-renderer
 
 ytmusic-search-suggestions-section.style-scope.ytmusic-search-box
 {
-  border-top: 1px solid var(--ctp-accent) !important;
-}
-
-ytmusic-search-suggestions-section.style-scope.ytmusic-search-box
-{
-  background: var(--ctp-base) !important;
+  background: var(--ctp-mantle) !important;
 }
 
 div.search-box.style-scope.ytmusic-search-box
@@ -654,6 +670,11 @@ yt-formatted-string.text.style-scope.ytmusic-toggle-menu-service-item-renderer
 }
 
 yt-icon.icon.style-scope.ytmusic-toggle-menu-service-item-renderer
+{
+  fill: var(--ctp-accent) !important;
+}
+
+yt-icon.ytmusic-menu-service-item-download-renderer
 {
   fill: var(--ctp-accent) !important;
 }
