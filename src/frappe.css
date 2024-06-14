@@ -302,6 +302,20 @@ yt-icon.icon.style-scope.ytmusic-play-button-renderer {
   fill: var(--ctp-base) !important;
 }
 
+.play-button .yt-spec-button-shape-next__icon > yt-icon
+{
+  fill: var(--ctp-base) !important;
+}
+
+.radio-button .yt-spec-button-shape-next__icon > yt-icon
+{
+  fill: var(--ctp-base) !important;
+}
+
+ytmusic-tabs.stuck {
+	background-color: var(--catppuccin-mantle) !important;
+}
+
 paper-icon-button.ytmusic-like-button-renderer
 {
   color: var(--ctp-text) !important;
