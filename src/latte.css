@@ -582,6 +582,7 @@ div.background-gradient.style-scope.ytmusic-browse-response
 
 ytmusic-search-suggestion
 {
+  color: var(--ctp-text) !important;
   background: var(--ctp-mantle) !important;
   --iron-icon-fill-color: var(--ctp-accent) !important;
 }
