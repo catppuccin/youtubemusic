@@ -1607,7 +1607,6 @@ yt-formatted-string.title.style-scope.ytmusic-setting-single-option-menu-rendere
 {
   color: var(--ctp-accent) !important;
   border-color: var(--ctp-accent) !important;
-  height: 40px !important;
   border-radius: 36px !important;
 }
 
