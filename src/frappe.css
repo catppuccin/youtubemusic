@@ -570,6 +570,11 @@ yt-formatted-string.style-scope.ytmusic-shelf-renderer
   color: var(--ctp-text) !important;
 }
 
+yt-formatted-string.style-scope.ytmusic-menu-service-item-download-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
 yt-formatted-string.strapline.style-scope.ytmusic-shelf-renderer
 {
   color: var(--ctp-text) !important;
@@ -654,6 +659,11 @@ yt-formatted-string.text.style-scope.ytmusic-toggle-menu-service-item-renderer
 }
 
 yt-icon.icon.style-scope.ytmusic-toggle-menu-service-item-renderer
+{
+  fill: var(--ctp-accent) !important;
+}
+
+yt-icon.ytmusic-menu-service-item-download-renderer
 {
   fill: var(--ctp-accent) !important;
 }
