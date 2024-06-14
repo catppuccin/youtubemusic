@@ -285,6 +285,11 @@ yt-icon.icon.style-scope.ytmusic-play-button-renderer {
 	fill: var(--ctp-base) !important;
 }
 
+.watch-button .yt-spec-button-shape-next__icon > yt-icon
+{
+  fill: var(--ctp-base) !important;
+}
+
 paper-icon-button.ytmusic-like-button-renderer
 {
   color: var(--ctp-text) !important;
