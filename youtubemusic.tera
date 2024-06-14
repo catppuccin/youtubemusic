@@ -590,6 +590,16 @@ ytmusic-search-suggestion
   --iron-icon-fill-color: var(--ctp-accent) !important;
 }
 
+ytmusic-background-promo-renderer[renderer-style="full-height"]
+{
+  background: none !important;
+}
+
+ytmusic-background-promo-renderer[renderer-style="full-height"] .promo-title.ytmusic-background-promo-renderer:not([hidden])
+{
+  color: var(--ctp-text) !important;
+}
+
 ytmusic-search-box[is-bauhaus-sidenav-enabled] #suggestion-list.ytmusic-search-box
 {
   background: var(--ctp-mantle) !important;
