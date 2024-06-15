@@ -1198,7 +1198,7 @@ ytd-multi-page-menu-renderer.style-scope.ytmusic-popup-container
 
 ytd-multi-page-menu-renderer
 {
-  border-radius: 2px !important;
+  border-radius: 5px !important;
 }
 
 ytmusic-setting-category-collection-renderer.style-scope.ytmusic-settings-page
