@@ -98,7 +98,7 @@ ytmusic-list-item-renderer
 
 ytmusic-responsive-list-item-renderer
 {
-  background-color: var(--ctp-base) !important;
+  background-color: var(--ctp-mantle) !important;
 }
 
 ytmusic-player-queue-item
@@ -442,7 +442,7 @@ tp-yt-paper-listbox#items.style-scope.ytmusic-menu-popup-renderer
 {
   color: var(--ctp-mantle) !important;
   background-color: var(--ctp-mantle) !important;
-  border: solid 4px;
+  border: 1px solid var(--ctp-surface0) !important;
 }
 
 yt-formatted-string.text.style-scope.ytmusic-menu-service-item-renderer
@@ -725,7 +725,6 @@ ytmusic-settings-page.style-scope.ytmusic-dialog
 {
   background-color: var(--ctp-base) !important;
   color: var(--ctp-text) !important;
-  border: 1px var(--ctp-accent) solid !important;
 }
 
 ytmusic-settings-category-collection-renderer.style-scope.ytmusic-settings-page
@@ -1208,7 +1207,12 @@ ytd-active-account-header-renderer.style-scope.ytd-multi-page-menu-renderer
 
 ytd-multi-page-menu-renderer.style-scope.ytmusic-popup-container
 {
-  border: 1px solid var(--ctp-accent) !important;
+  border: 1px solid var(--ctp-surface0) !important;
+}
+
+ytd-multi-page-menu-renderer
+{
+  border-radius: 5px !important;
 }
 
 ytmusic-setting-category-collection-renderer.style-scope.ytmusic-settings-page
@@ -1398,7 +1402,9 @@ ytmusic-multi-select-menu-bar.style-scope.ytmusic-dialog
 
 ytmusic-dialog
 {
-  background-color: var(--ctp-accent) !important;
+  background-color: var(--ctp-surface0) !important;
+  border: 1px var(--ctp-surface0) solid !important;
+  border-radius: 2px !important;
 }
 
 yt-formatted-string.style-scope.ytmusic-multi-select-menu-bar
