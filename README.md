@@ -42,12 +42,11 @@
 
 ### [Youtube Music Desktop App (ytmdesktop)](https://github.com/ytmdesktop/ytmdesktop)
 
-1. Navigate to the settings of the Youtube Music Desktop App.
-2. Go to the appearances tab and turn on custom theme.
-3. Click on the pencil icon to open up the editor window.
-4. Copy and paste in the flavour's css file contents for your flavour and press the save button.
+1. Create a new css file with one of the flavour imports below.
+2. Navigate to Settings > Appearance and enable Custom CSS
+3. In Custom CSS file path, choose the CSS file you created.
 
-### The code
+### The code (flavor imports)
 
 ```css
 /* latte */
