@@ -54,11 +54,6 @@ ytmusic-nav-bar
   background: var(--ctp-mantle) !important;
 }
 
-.yt-simple-endpoint[aria-label="Home"]
-{
-  visibility:hidden !important;
-}
-
 ytmusic-pivot-bar-item-renderer:hover, ytmusic-pivot-bar-item-renderer.iron-selected
 {
   color: var(--ctp-accent) !important;
