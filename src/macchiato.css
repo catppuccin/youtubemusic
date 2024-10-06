@@ -1224,7 +1224,7 @@ ytd-multi-page-menu-renderer.style-scope.ytmusic-popup-container
 
 ytd-multi-page-menu-renderer
 {
-  border-radius: 2px !important;
+  border-radius: 5px !important;
 }
 
 ytmusic-setting-category-collection-renderer.style-scope.ytmusic-settings-page
@@ -1823,6 +1823,11 @@ div.cet-titlebar.cet-linux.inactive
 
 div.cet-titlebar.cet-linux
 {
+  background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+}
+
+.go3564761155 {
   background-color: var(--ctp-mantle) !important;
   color: var(--ctp-text) !important;
 }
