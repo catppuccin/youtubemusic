@@ -31,10 +31,7 @@ html:not(.style-scope)
 
   --unthemed-yet: inherit !important;
 
-  --ytmusic-scrollbar-width: 0px !important;
-  --ytd-scrollbar-width: 0px !important;
   --yt-spec-commerce-filled-hover: var(--ctp-accent) !important;
-  scrollbar-width: none !important;
 }
 
 i.material-icons

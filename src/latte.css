@@ -31,10 +31,7 @@ html:not(.style-scope)
 
   --unthemed-yet: inherit !important;
 
-  --ytmusic-scrollbar-width: 0px !important;
-  --ytd-scrollbar-width: 0px !important;
   --yt-spec-commerce-filled-hover: var(--ctp-accent) !important;
-  scrollbar-width: none !important;
 }
 
 i.material-icons
@@ -1863,11 +1860,6 @@ ytmusic-app-layout[is-bauhaus-sidenav-enabled] #mini-guide-background.ytmusic-ap
 tp-yt-paper-toast
 {
   background: var(--ctp-mantle) !important;
-}
-
-.logo.ytmusic-logo
-{
-  content: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/YouTube_Music_full_logo.svg/2560px-YouTube_Music_full_logo.svg.png") !important;
 }
 
 ytmusic-search-box[is-bauhaus-sidenav-enabled] #suggestion-list.ytmusic-search-box
