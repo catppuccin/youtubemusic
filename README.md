@@ -109,7 +109,7 @@ You can find the references to the available colors you can change in the beginn
 
 - [Anubis](https://github.com/anubisnekhet)
 - [OceanicSquirrel](https://github.com/OceanicSquirrel)
-- [jh-devv](https://github.com/jh-devv)
+- [Sofiedotcafe](https://github.com/sofiedotcafe)
 
 ### Previous maintainer
 
