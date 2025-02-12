@@ -1825,6 +1825,11 @@ ytmusic-app-layout[is-bauhaus-sidenav-enabled] #nav-bar-background.ytmusic-app-l
   border-bottom: none !important;
 }
 
+ytmusic-nav-bar[enable-bauhaus-style] .app-bar-button.ytmusic-nav-bar {
+  background: var(--ctp-accent) !important;
+  color: var(--ctp-base) !important;
+}
+
 {%- if not flavor.dark %}
 
 /* Custom fork changes */
