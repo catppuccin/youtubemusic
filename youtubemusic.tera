@@ -90,7 +90,7 @@ ytmusic-list-item-renderer
 
 ytmusic-responsive-list-item-renderer
 {
-  background-color: var(--ctp-mantle) !important;
+  background-color: var(--ctp-base) !important;
 }
 
 ytmusic-player-queue-item
