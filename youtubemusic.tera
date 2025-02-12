@@ -1820,6 +1820,11 @@ ytmusic-player-bar:is([repeat-mode=NONE]) .repeat.ytmusic-player-bar {
   background: var(--ctp-mantle) !important;
 }
 
+ytmusic-app-layout[is-bauhaus-sidenav-enabled] #nav-bar-background.ytmusic-app-layout
+{
+  border-bottom: none !important;
+}
+
 {%- if not flavor.dark %}
 
 /* Custom fork changes */
