@@ -1812,6 +1812,10 @@ div.cet-titlebar.cet-linux
   color: var(--ctp-text) !important;
 }
 
+ytmusic-player-bar:is([repeat-mode=NONE]) .repeat.ytmusic-player-bar {
+  opacity: 0.5;
+}
+
 {%- if not flavor.dark %}
 
 /* Custom fork changes */
