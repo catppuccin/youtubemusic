@@ -1830,6 +1830,10 @@ ytmusic-nav-bar[enable-bauhaus-style] .app-bar-button.ytmusic-nav-bar {
   color: var(--ctp-base) !important;
 }
 
+yt-formatted-string.ytmusic-guide-signin-promo-renderer {
+  color: var(--ctp-subtext) !important;
+}
+
 {%- if not flavor.dark %}
 
 /* Custom fork changes */
