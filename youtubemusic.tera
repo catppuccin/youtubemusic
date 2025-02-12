@@ -1816,6 +1816,10 @@ ytmusic-player-bar:is([repeat-mode=NONE]) .repeat.ytmusic-player-bar {
   opacity: 0.5;
 }
 
+#nav-bar-background.ytmusic-app-layout {
+  background: var(--ctp-mantle) !important;
+}
+
 {%- if not flavor.dark %}
 
 /* Custom fork changes */
