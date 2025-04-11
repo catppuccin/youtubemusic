@@ -305,7 +305,7 @@ yt-icon.icon.style-scope.ytmusic-play-button-renderer {
 }
 
 ytmusic-tabs.stuck {
-	background-color: var(--catppuccin-mantle) !important;
+	background-color: var(--ctp-mantle) !important;
 }
 
 paper-icon-button.ytmusic-like-button-renderer
