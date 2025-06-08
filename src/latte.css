@@ -32,6 +32,7 @@ html:not(.style-scope)
   --unthemed-yet: inherit !important;
 
   --yt-spec-commerce-filled-hover: var(--ctp-accent) !important;
+  --yt-spec-menu-background: var(--ctp-base) !important;
 }
 
 i.material-icons
