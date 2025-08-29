@@ -21,6 +21,14 @@ html:not(.style-scope)
 
   --yt-spec-commerce-filled-hover: var(--ctp-accent) !important;
   --yt-spec-menu-background: var(--ctp-base) !important;
+
+  --ytmusic-scrollbar-width: 0px;
+  --ytd-scrollbar-width: 0px;
+}
+
+*
+{
+  scrollbar-width: none !important;
 }
 
 i.material-icons
