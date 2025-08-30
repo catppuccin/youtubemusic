@@ -1758,6 +1758,7 @@ ytmusic-player-page[is-mweb-modernization-enabled][player-page-ui-state=TABS_VIE
 
 .play-pause-button-wrapper.ytmusic-player-controls {
   background: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
 }
 
 #primaryProgress.tp-yt-paper-progress {
