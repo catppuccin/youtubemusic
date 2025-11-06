@@ -33,6 +33,16 @@ html:not(.style-scope)
 
   --yt-spec-commerce-filled-hover: var(--ctp-accent) !important;
   --yt-spec-menu-background: var(--ctp-base) !important;
+
+  --disabled-text-color: var(--ctp-surface0) !important;
+
+  --ytmusic-scrollbar-width: 0px !important;
+  --ytd-scrollbar-width: 0px !important;
+}
+
+*
+{
+  scrollbar-width: none !important;
 }
 
 i.material-icons
@@ -147,6 +157,14 @@ yt-formatted-string.duration.style-scope.ytmusic-player-queue-item
 ytmusic-player-bar
 {
   background: var(--ctp-mantle) !important;
+}
+
+ytmusic-mealbar-promo-renderer {
+  background: var(--ctp-base) !important;
+}
+
+.messages.ytmusic-mealbar-promo-renderer {
+  color: var(--ctp-subtext0) !important;
 }
 
 #progress-bar.ytmusic-player-bar
@@ -438,7 +456,15 @@ yt-icon.icon.style-scope.ytmusic-menu-service-item-renderer
   fill: var(--ctp-accent) !important;
 }
 
-div#navigation-endpoint.yt-simple-endpoint.style-scope.ytmusic-menu-navigation-item-renderer
+ytmusic-menu-navigation-item-renderer,
+ytmusic-toggle-menu-service-item-renderer
+{
+  --iron-icon-fill-color: var(--ctp-accent) !important;
+  --icon-color: var(--ctp-accent) !important;
+}
+
+div#navigation-endpoint.yt-simple-endpoint.style-scope.ytmusic-menu-navigation-item-renderer,
+div.text.ytmusic-menu-navigation-item-renderer
 {
   color: var(--ctp-text) !important;
 }
@@ -548,6 +574,33 @@ tp-yt-paper-toast
 {
   background: var(--ctp-mantle) !important;
   color: var(--ctp-text) !important;
+}
+
+.description.ytmusic-description-shelf-renderer,
+.synced-lyrics-vlist
+{
+  color: var(--ctp-text) !important;
+}
+
+.lyrics-picker-dot
+{
+  border: 1px solid var(--ctp-surface0) !important;
+}
+
+.lyrics-picker-dot[style*="background: white"]
+{
+  background: var(--ctp-text) !important;
+}
+
+.lyrics-picker-dot[style*="background: black"]
+{
+  background: var(--ctp-crust) !important;
+}
+
+.lyrics-picker-item > yt-icon{
+  --icon-color: var(--ctp-accent) !important;
+  --iron-icon-fill-color: var(--ctp-accent) !important;
+  --iron-icon-stroke-color: var(--ctp-accent) !important;
 }
 
 ytd-multi-page-menu-renderer.style-scope.ytmusic-popup-container
@@ -1422,9 +1475,57 @@ yt-checkbox-renderer.fixed-column.MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIO
   color: var(--ctp-accent) !important;
 }
 
+.yt-icon{
+  fill: var(--ctp-accent) !important;
+  --icon-color: var(--cpt-accent) !important;
+}
+
 button.yt-icon-button > yt-icon
 {
   fill: var(--ctp-accent) !important;
+}
+
+button.yt-icon-button
+{
+  color: var(--ctp-text) !important;
+  --iron-icon-theme-color: var(--ctp-text) !important;
+  --icon-color: var(--ctp-text) !important;
+  --iron-icon-fill-color: var(--ctp-text) !important;
+  --iron-icon-stroke-color: var(--ctp-text) !important;
+}
+
+yt-icon-button.previous-items-button,
+yt-icon-button.next-items-button
+{
+  border-color: var(--ctp-accent) !important;
+}
+
+yt-icon-button.previous-items-button > button.yt-icon-button[aria-label="Previous"],
+yt-icon-button.next-items-button > button.yt-icon-button[aria-label="Next"]
+{
+  color: var(--ctp-accent) !important;
+  --iron-icon-theme-color: var(--ctp-accent) !important;
+  --icon-color: var(--ctp-accent) !important;
+  --iron-icon-fill-color: var(--ctp-accent) !important;
+  --iron-icon-stroke-color: var(--ctp-accent) !important;
+}
+
+ytmusic-player-bar:not([repeat-mode=NONE]) .repeat.ytmusic-player-bar
+{
+  color: var(--ctp-text) !important;
+}
+
+ytmusic-player-bar.repeat.ytmusic-player-bar
+{
+  color: var(--ctp-text) !important;
+}
+
+ytmusic-app-layout #mini-guide-background.ytmusic-app-layout,
+ytmusic-app-layout #nav-bar-background.ytmusic-app-layout,
+ytmusic-app-layout #nav-bar-divider.ytmusic-app-layout
+{
+  background-color: var(--ctp-crust) !important;
+  border-color: var(--ctp-crust) !important;
 }
 
 ytmusic-unified-share-panel-renderer.style-scope.ytmusic-popup-container
@@ -1762,6 +1863,7 @@ ytmusic-player-page[is-mweb-modernization-enabled][player-page-ui-state=TABS_VIE
 
 .play-pause-button-wrapper.ytmusic-player-controls {
   background: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
 }
 
 #primaryProgress.tp-yt-paper-progress {
