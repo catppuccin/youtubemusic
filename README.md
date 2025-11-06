@@ -37,30 +37,24 @@
 ## Usage
 ### [Youtube Music Desktop App (th-ch)](https://github.com/th-ch/youtube-music)
 
-1. Create a new css file with one of the flavour imports below.
-2. Assuming you have the latest build with the theme selection menu, open the app, click `Options > Visual Tweaks > Theme > Import custom CSS file`, and choose the CSS file.
+1. Download a CSS file with your desired flavor from `src` e.g. `mocha.css` (NOT `youtubemusic.user.css`).
+2. Open the app, click `Options > Visual Tweaks > Theme > Import custom CSS file`, and choose the downloaded CSS file.
 
 ### [Youtube Music Desktop App (ytmdesktop)](https://github.com/ytmdesktop/ytmdesktop)
 
-1. Create a new css file with one of the flavour imports below.
+1. Download a CSS file with your desired flavor from `src` e.g. `mocha.css` (NOT `youtubemusic.user.css`).
 2. Navigate to Settings > Appearance and enable Custom CSS
 3. In Custom CSS file path, choose the CSS file you created.
 
-### The code (flavor imports)
+### Changing the accent
 
 ```css
-/* latte */
-@import url("https://youtubemusic.catppuccin.com/src/latte.css");
-/* frappe */
-@import url("https://youtubemusic.catppuccin.com/src/frappe.css");
-/* macchiato */
-@import url("https://youtubemusic.catppuccin.com/src/macchiato.css");
-/* mocha */
-@import url("https://youtubemusic.catppuccin.com/src/mocha.css");
-
-/* if you want to change the accent color, paste this in aswell and change the hex code - or use one of the predefined colors with var(--ctp-'color') - e.g. var(--ctp-maroon) */
+/* find the --ctp-accent variable in the file and change it to your desired color in hex -
+   or use one of the predefined colors with var(--ctp-'color') - e.g. --ctp-accent: var(--ctp-maroon) !important; */
 html:not(.style-scope) {
-    --ctp-accent: #f5e0dc !important;
+/*...*/
+    --ctp-accent: #f5e0dc !important; /* example */
+/*...*/
 }
 ```
 
@@ -73,31 +67,20 @@ html:not(.style-scope) {
 
 ### Overriding Colors
 
-If you wish to change the default colors, do the following:
-
-#### For [Youtube Music Desktop App (th-ch)](https://github.com/th-ch/youtube-music)
-
-Change the respective colors in the css file you chose to the values you need, for example:
+If you wish to change the default colors to something different, like an OLEDpuccin variant, replace them in the CSS file within `html:not(.style-scope)`:
 
 ```css
-    --ctp-base: #020202;
-    --ctp-crust: #010101;
-    --ctp-mantle: #000;
-/* OLEDpuccin*/
-```
-
-#### For [Youtube Music Desktop App (ytmdesktop)](https://github.com/ytmdesktop/ytmdesktop) or Stylus
-
-Paste the modified colors at the end of your theme of choice (ytmdesktop), or within `html:not(.style-scope)` (Stylus):
-
-```css
-    --ctp-base: #020202; !important;
-    --ctp-crust: #010101; !important;
-    --ctp-mantle: #000; !important;
+html:not(.style-scope) {
+/*...*/
+    --ctp-base: #020202 !important;
+    --ctp-crust: #010101 !important;
+    --ctp-mantle: #000 !important;
+/*...*/
+}
 /* OLEDpuccin */
 ```
 
-You can find the references to the available colors you can change in the beginning of any theme CSS file.
+All of the colors available for change are in the beginning of the CSS file.
 
 ## 💝 Thanks to
 
