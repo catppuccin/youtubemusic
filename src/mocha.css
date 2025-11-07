@@ -36,7 +36,7 @@ html:not(.style-scope)
   --yt-spec-badge-chip-background: var(--ctp-mantle) !important;
   --yt-spec-outline: var(--ctp-surface1) !important;
 
-  --ytmusic-nav-bar: var(--ctp-crust)!important;
+  --ytmusic-nav-bar: var(--ctp-crust) !important;
   --ytmusic-search-border: var(--ctp-surface1) !important;
   --ytmusic-menu-item-hover-background-color: var(--ctp-crust) !important;
 
@@ -84,6 +84,7 @@ ytmusic-pivot-bar-item-renderer
 ytmusic-search-box
 {
   color: var(--ctp-text) !important;
+  --ytmusic-search-border: var(--ctp-surface1) !important;
 }
 
 a.ytmusic-content-update-chip
