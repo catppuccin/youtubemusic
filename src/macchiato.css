@@ -33,6 +33,12 @@ html:not(.style-scope)
 
   --yt-spec-commerce-filled-hover: var(--ctp-accent) !important;
   --yt-spec-menu-background: var(--ctp-base) !important;
+  --yt-spec-badge-chip-background: var(--ctp-mantle) !important;
+  --yt-spec-outline: var(--ctp-surface1) !important;
+
+  --ytmusic-nav-bar: var(--ctp-crust)!important;
+  --ytmusic-search-border: var(--ctp-surface1) !important;
+  --ytmusic-menu-item-hover-background-color: var(--ctp-crust) !important;
 
   --disabled-text-color: var(--ctp-surface0) !important;
 
@@ -1451,6 +1457,17 @@ img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promo
 {
   content: url("https://raw.githubusercontent.com/catppuccin/youtubemusic/main/assets/icons/macchiatopremtitle.png") !important;
   background-color: var(--ctp-accent) !important;
+}
+
+ytmusic-multi-page-menu,
+ytmusic-multi-page-menu-renderer
+{
+  border-radius: 12px !important;
+}
+
+ytmusic-multi-page-menu-renderer
+{
+  border: 2px solid var(--ctp-surface1) !important;
 }
 
 ytmusic-multi-select-menu-bar.style-scope.ytmusic-dialog
