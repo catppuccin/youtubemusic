@@ -33,6 +33,12 @@ html:not(.style-scope)
 
   --yt-spec-commerce-filled-hover: var(--ctp-accent) !important;
   --yt-spec-menu-background: var(--ctp-base) !important;
+  --yt-spec-badge-chip-background: var(--ctp-mantle) !important;
+  --yt-spec-outline: var(--ctp-surface1) !important;
+
+  --ytmusic-nav-bar: var(--ctp-crust) !important;
+  --ytmusic-search-border: var(--ctp-surface1) !important;
+  --ytmusic-menu-item-hover-background-color: var(--ctp-crust) !important;
 
   --disabled-text-color: var(--ctp-surface0) !important;
 
@@ -78,6 +84,7 @@ ytmusic-pivot-bar-item-renderer
 ytmusic-search-box
 {
   color: var(--ctp-text) !important;
+  --ytmusic-search-border: var(--ctp-surface1) !important;
 }
 
 a.ytmusic-content-update-chip
@@ -1453,6 +1460,17 @@ img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promo
   background-color: var(--ctp-accent) !important;
 }
 
+ytmusic-multi-page-menu,
+ytmusic-multi-page-menu-renderer
+{
+  border-radius: 12px !important;
+}
+
+ytmusic-multi-page-menu-renderer
+{
+  border: 2px solid var(--ctp-surface1) !important;
+}
+
 ytmusic-multi-select-menu-bar.style-scope.ytmusic-dialog
 {
   background-color: var(--ctp-mantle) !important;
@@ -1739,20 +1757,22 @@ yt-formatted-string.title.style-scope.ytmusic-setting-single-option-menu-rendere
 ytmusic-av-toggle[playback-mode=OMV_PREFERRED] .video-button.ytmusic-av-toggle
 {
   background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
 }
 
 ytmusic-av-toggle[playback-mode=ATV_PREFERRED] .song-button.ytmusic-av-toggle
 {
   background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
 }
 
-ytmusic-av-toggle[toggle-disabled] .song-button.ytmusic-av-toggle
+ytmusic-av-toggle .song-button.ytmusic-av-toggle
 {
   color: var(--ctp-accent) !important;
   background-color: var(--ctp-crust);
 }
 
-ytmusic-av-toggle[toggle-disabled] .video-button.ytmusic-av-toggle
+ytmusic-av-toggle .video-button.ytmusic-av-toggle
 {
   color: var(--ctp-accent) !important;
   background-color: var(--ctp-crust);
