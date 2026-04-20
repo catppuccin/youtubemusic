@@ -1943,6 +1943,10 @@ yt-icon.ytmusic-guide-signin-promo-renderer {
   color: var(--ctp-accent) !important;
 }
 
+ytmusic-mealbar-promo-renderer[dialog][dialog][dialog] {
+  display: none !important;
+}
+
 /* Custom fork changes */
 
 ytmusic-app-layout[is-bauhaus-sidenav-enabled] #nav-bar-background.ytmusic-app-layout
