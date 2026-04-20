@@ -1931,6 +1931,10 @@ yt-icon.ytmusic-guide-signin-promo-renderer {
   color: var(--ctp-accent) !important;
 }
 
+ytmusic-mealbar-promo-renderer[dialog][dialog][dialog] {
+  display: none !important;
+}
+
 {%- if not flavor.dark %}
 
 /* Custom fork changes */
