@@ -1944,5 +1944,5 @@ yt-icon.ytmusic-guide-signin-promo-renderer {
 }
 
 ytmusic-mealbar-promo-renderer[dialog][dialog][dialog] {
-  display: none;
+  display: none !important;
 }

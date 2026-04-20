@@ -2012,5 +2012,5 @@ yt-formatted-string#suggestion-cell-6x0.title.style-scope.ytmusic-search-suggest
 }
 
 ytmusic-mealbar-promo-renderer[dialog][dialog][dialog] {
-  display: none;
+  display: none !important;
 }
