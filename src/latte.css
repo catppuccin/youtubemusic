@@ -1943,6 +1943,10 @@ yt-icon.ytmusic-guide-signin-promo-renderer {
   color: var(--ctp-accent) !important;
 }
 
+ytmusic-mealbar-promo-renderer[dialog][dialog][dialog] {
+  display: none !important;
+}
+
 /* Custom fork changes */
 
 ytmusic-app-layout[is-bauhaus-sidenav-enabled] #nav-bar-background.ytmusic-app-layout
@@ -2009,8 +2013,4 @@ yt-formatted-string#suggestion-cell-5x0.title.style-scope.ytmusic-search-suggest
 yt-formatted-string#suggestion-cell-6x0.title.style-scope.ytmusic-search-suggestion
 {
   color: var(--ctp-text) !important;
-}
-
-ytmusic-mealbar-promo-renderer[dialog][dialog][dialog] {
-  display: none !important;
 }
