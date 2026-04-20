@@ -1942,3 +1942,7 @@ yt-icon.ytmusic-guide-signin-promo-renderer {
 .action-text.ytmusic-guide-signin-promo-renderer {
   color: var(--ctp-accent) !important;
 }
+
+ytmusic-mealbar-promo-renderer[dialog][dialog][dialog] {
+  display: none !important;
+}
