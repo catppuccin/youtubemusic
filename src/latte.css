@@ -2010,3 +2010,7 @@ yt-formatted-string#suggestion-cell-6x0.title.style-scope.ytmusic-search-suggest
 {
   color: var(--ctp-text) !important;
 }
+
+ytmusic-mealbar-promo-renderer[dialog][dialog][dialog] {
+  display: none;
+}
