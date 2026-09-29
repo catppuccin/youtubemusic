@@ -2030,3 +2030,22 @@ yt-formatted-string#suggestion-cell-6x0.title.style-scope.ytmusic-search-suggest
 {
   color: var(--ctp-text) !important;
 }
+
+ytmusic-miniplayer {
+  --ytmusic-player-bar-background: var(--ctp-base) !important;
+}
+    
+.ytMusicMiniPlayerProgressBar {
+  --yt-sys-color-baseline--static-brand-red: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--static-magenta: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--mono-tonal-hover: var(--ctp-surface2) !important;
+  --yt-sys-color-baseline--ten-percent-layer: var(--ctp-surface0) !important;
+}
+
+.ytMusicMiniPlayerProgressBar::-webkit-slider-thumb {
+  background: var(--ctp-accent) !important;
+}
+    
+.ytMusicMiniPlayerProgressBar::-moz-range-thumb {
+    background: var(--ctp-accent) !important;
+}
