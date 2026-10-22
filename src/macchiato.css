@@ -29,15 +29,229 @@ html:not(.style-scope)
 
   --ctp-accent: var(--ctp-mauve);
 
-  --unthemed-yet: inherit !important;
-
   --yt-spec-commerce-filled-hover: var(--ctp-accent) !important;
-  --yt-spec-menu-background: var(--ctp-base) !important;
 
-  --disabled-text-color: var(--ctp-surface0) !important;
+  --ytmusic-nav-bar: var(--ctp-crust) !important;
 
   --ytmusic-scrollbar-width: 0px !important;
   --ytd-scrollbar-width: 0px !important;
+}
+
+/* Shared tokens used by both Polymer renderers and the newer view models.
+   Repeat on local theme boundaries: [dark]/[light] redeclare these variables
+   on menus and dialogs, so setting only html does not reach those components. */
+html:not(.style-scope),
+html[dark],
+html[light],
+[dark],
+[light]
+{
+  --yt-sys-color-baseline--base-background: var(--ctp-base) !important;
+  --yt-sys-color-baseline--raised-background: var(--ctp-mantle) !important;
+  --yt-sys-color-baseline--menu-background: var(--ctp-mantle) !important;
+  --yt-sys-color-baseline--inverted-background: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--inverted-background-hover: var(--ctp-lavender) !important;
+  --yt-sys-color-baseline--additive-background: var(--ctp-surface0) !important;
+  --yt-sys-color-baseline--additive-background-inverse: var(--ctp-surface0) !important;
+  --yt-sys-color-baseline--text-primary: var(--ctp-text) !important;
+  --yt-sys-color-baseline--text-secondary: var(--ctp-text) !important;
+  --yt-sys-color-baseline--text-disabled: var(--ctp-overlay0) !important;
+  --yt-sys-color-baseline--text-primary-inverse: var(--ctp-base) !important;
+  --yt-sys-color-baseline--text-secondary-inverse: var(--ctp-base) !important;
+  --yt-sys-color-baseline--text-disabled-inverse: var(--ctp-surface2) !important;
+  --yt-sys-color-baseline--wordmark-text: var(--ctp-text) !important;
+  --yt-sys-color-baseline--outline: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--outline-inverse: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--outline-opaque: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--outline-inverse-opaque: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--outline-rim: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--outline-rim-inverse: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--outline-wash: transparent !important;
+  --yt-sys-color-baseline--call-to-action: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--call-to-action-inverse: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--call-to-action-hover: var(--ctp-lavender) !important;
+  --yt-sys-color-baseline--suggested-action: var(--ctp-surface0) !important;
+  --yt-sys-color-baseline--suggested-action-inverse: var(--ctp-surface0) !important;
+  --yt-sys-color-baseline--suggested-action-hover: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--touch-response: var(--ctp-text) !important;
+  --yt-sys-color-baseline--touch-response-inverse: var(--ctp-base) !important;
+  --yt-sys-color-baseline--mono-filled-hover: var(--ctp-lavender) !important;
+  --yt-sys-color-baseline--mono-filled-hover-inverse: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--mono-tonal-hover: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--mono-tonal-hover-inverse: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--button-chip-background-hover: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--solid-background: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--solid-background-inverse: var(--ctp-base) !important;
+  --yt-sys-color-baseline--solid-rim: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--solid-rim-inverse: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--solid-wash: color-mix(in srgb, var(--ctp-text) 20%, transparent) !important;
+  --yt-sys-color-baseline--solid-wash-inverse: color-mix(in srgb, var(--ctp-base) 20%, transparent) !important;
+  --yt-sys-color-baseline--tonal-background: var(--ctp-surface0) !important;
+  --yt-sys-color-baseline--tonal-background-inverse: var(--ctp-surface0) !important;
+  --yt-sys-color-baseline--tonal-rim: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--tonal-rim-inverse: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--tonal-wash: color-mix(in srgb, var(--ctp-text) 10%, transparent) !important;
+  --yt-sys-color-baseline--tonal-wash-inverse: color-mix(in srgb, var(--ctp-base) 10%, transparent) !important;
+  --yt-sys-color-baseline--static-brand-red: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--static-magenta: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--static-medium-magenta: var(--ctp-pink) !important;
+  --yt-sys-color-baseline--static-brand-white: var(--ctp-text) !important;
+  --yt-sys-color-baseline--static-white-background: var(--ctp-text) !important;
+  --yt-sys-color-baseline--static-brand-black: var(--ctp-crust) !important;
+  --yt-sys-color-baseline--static-black: var(--ctp-crust) !important;
+  --yt-sys-color-baseline--static-grey: var(--ctp-overlay0) !important;
+  --yt-sys-color-baseline--static-dark-grey: var(--ctp-surface0) !important;
+  --yt-sys-color-baseline--red-indicator: var(--ctp-red) !important;
+  --yt-sys-color-baseline--brand-red-contrast: var(--ctp-red) !important;
+  --yt-sys-color-baseline--brand-button-background: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--error-indicator: var(--ctp-red) !important;
+  --yt-sys-color-baseline--error-indicator-inverse: var(--ctp-red) !important;
+  --yt-sys-color-baseline--text-error: var(--ctp-red) !important;
+  --yt-sys-color-baseline--error-background-red: color-mix(in srgb, var(--ctp-red) 20%, var(--ctp-base)) !important;
+  --yt-sys-color-baseline--background-warning: color-mix(in srgb, var(--ctp-yellow) 20%, var(--ctp-base)) !important;
+  --yt-sys-color-baseline--background-complete: color-mix(in srgb, var(--ctp-green) 20%, var(--ctp-base)) !important;
+  --yt-sys-color-baseline--text-warning: var(--ctp-yellow) !important;
+  --yt-sys-color-baseline--icon-warning: var(--ctp-yellow) !important;
+  --yt-sys-color-baseline--static-ad-yellow: var(--ctp-yellow) !important;
+  --yt-sys-color-baseline--text-complete: var(--ctp-green) !important;
+  --yt-sys-color-baseline--themed-green: var(--ctp-green) !important;
+  --yt-sys-color-baseline--themed-green-inverse: var(--ctp-green) !important;
+  --yt-sys-color-baseline--overlay-text-primary: var(--ctp-text) !important;
+  --yt-sys-color-baseline--overlay-text-secondary: var(--ctp-text) !important;
+  --yt-sys-color-baseline--overlay-text-disabled: var(--ctp-overlay0) !important;
+  --yt-sys-color-baseline--overlay-text-primary-inverse: var(--ctp-base) !important;
+  --yt-sys-color-baseline--overlay-background-solid: var(--ctp-mantle) !important;
+  --yt-sys-color-baseline--overlay-background-heavy: color-mix(in srgb, var(--ctp-crust) 90%, transparent) !important;
+  --yt-sys-color-baseline--overlay-background-medium: color-mix(in srgb, var(--ctp-crust) 80%, transparent) !important;
+  --yt-sys-color-baseline--overlay-background-medium-heavy: color-mix(in srgb, var(--ctp-crust) 85%, transparent) !important;
+  --yt-sys-color-baseline--overlay-background-medium-light: color-mix(in srgb, var(--ctp-mantle) 90%, transparent) !important;
+  --yt-sys-color-baseline--overlay-background-light: color-mix(in srgb, var(--ctp-crust) 40%, transparent) !important;
+  --yt-sys-color-baseline--overlay-background-extra-light: color-mix(in srgb, var(--ctp-crust) 20%, transparent) !important;
+  --yt-sys-color-baseline--overlay-background-brand: var(--ctp-surface0) !important;
+  --yt-sys-color-baseline--overlay-additive-background: var(--ctp-surface0) !important;
+  --yt-sys-color-baseline--overlay-button-primary: var(--ctp-surface2) !important;
+  --yt-sys-color-baseline--overlay-button-secondary: var(--ctp-surface0) !important;
+  --yt-sys-color-baseline--overlay-button-secondary-darker: var(--ctp-mantle) !important;
+  --yt-sys-color-baseline--overlay-call-to-action: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--overlay-call-to-action-hover: var(--ctp-lavender) !important;
+  --yt-sys-color-baseline--overlay-touch-response: var(--ctp-text) !important;
+  --yt-sys-color-baseline--overlay-touch-response-inverse: var(--ctp-base) !important;
+  --yt-sys-color-baseline--overlay-outline: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--overlay-filled-hover: var(--ctp-lavender) !important;
+  --yt-sys-color-baseline--overlay-tonal-hover: var(--ctp-surface1) !important;
+  --yt-sys-color-baseline--overlay-solid-background: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--overlay-solid-background-inverse: var(--ctp-base) !important;
+  --yt-sys-color-baseline--overlay-tonal-background: var(--ctp-surface0) !important;
+  --yt-sys-color-baseline--overlay-tonal-background-inverse: var(--ctp-surface0) !important;
+  --yt-sys-color-baseline--themed-overlay-background: color-mix(in srgb, var(--ctp-crust) 90%, transparent) !important;
+  --yt-sys-color-baseline--frosted-glass-mobile: color-mix(in srgb, var(--ctp-mantle) 90%, transparent) !important;
+  --yt-sys-color-baseline--frosted-glass-desktop: color-mix(in srgb, var(--ctp-mantle) 90%, transparent) !important;
+  --yt-sys-color-baseline--shadow-medium: color-mix(in srgb, var(--ctp-crust) 50%, transparent) !important;
+
+  /* Older components and Electron plugins still consume these names. */
+  --yt-spec-base-background: var(--ctp-base) !important;
+  --yt-spec-raised-background: var(--ctp-mantle) !important;
+  --yt-spec-menu-background: var(--ctp-mantle) !important;
+  --yt-spec-text-primary: var(--ctp-text) !important;
+  --yt-spec-text-secondary: var(--ctp-text) !important;
+  --yt-spec-text-disabled: var(--ctp-overlay0) !important;
+  --yt-spec-text-primary-inverse: var(--ctp-base) !important;
+  --yt-spec-icon-active-other: var(--ctp-text) !important;
+  --yt-spec-icon-inactive: var(--ctp-text) !important;
+  --yt-spec-icon-disabled: var(--ctp-overlay0) !important;
+  --yt-spec-call-to-action: var(--ctp-accent) !important;
+  --yt-spec-themed-blue: var(--ctp-accent) !important;
+  --yt-spec-static-brand-red: var(--ctp-accent) !important;
+  --yt-spec-static-brand-white: var(--ctp-text) !important;
+  --yt-spec-static-brand-black: var(--ctp-crust) !important;
+  --yt-spec-outline: var(--ctp-surface1) !important;
+  --yt-spec-badge-chip-background: var(--ctp-surface0) !important;
+  --yt-spec-mono-tonal-hover: var(--ctp-surface1) !important;
+  --yt-spec-mono-filled-hover: var(--ctp-lavender) !important;
+  --yt-spec-inverted-background: var(--ctp-accent) !important;
+  --yt-spec-additive-background: var(--ctp-surface0) !important;
+  --yt-spec-touch-response: var(--ctp-text) !important;
+  --ytmusic-color-blackpure: var(--ctp-crust) !important;
+  --ytmusic-color-black1: var(--ctp-crust) !important;
+  --ytmusic-color-black2: var(--ctp-mantle) !important;
+  --ytmusic-color-black4: var(--ctp-base) !important;
+  --ytmusic-color-white1: var(--ctp-text) !important;
+  --ytmusic-color-white1-alpha10: color-mix(in srgb, var(--ctp-text) 10%, transparent) !important;
+  --ytmusic-color-white1-alpha15: color-mix(in srgb, var(--ctp-text) 15%, transparent) !important;
+  --ytmusic-color-white1-alpha20: color-mix(in srgb, var(--ctp-text) 20%, transparent) !important;
+  --ytmusic-color-white1-alpha25: color-mix(in srgb, var(--ctp-text) 25%, transparent) !important;
+  --ytmusic-color-white1-alpha30: color-mix(in srgb, var(--ctp-text) 30%, transparent) !important;
+  --ytmusic-color-white1-alpha50: color-mix(in srgb, var(--ctp-text) 50%, transparent) !important;
+  --ytmusic-color-white1-alpha70: color-mix(in srgb, var(--ctp-text) 70%, transparent) !important;
+  --ytmusic-color-white1-alpha95: color-mix(in srgb, var(--ctp-text) 95%, transparent) !important;
+  --ytmusic-color-blackpure-alpha0: transparent !important;
+  --ytmusic-color-blackpure-alpha10: color-mix(in srgb, var(--ctp-crust) 10%, transparent) !important;
+  --ytmusic-color-blackpure-alpha60: color-mix(in srgb, var(--ctp-crust) 60%, transparent) !important;
+  --ytmusic-color-blackpure-alpha65: color-mix(in srgb, var(--ctp-crust) 65%, transparent) !important;
+  --ytmusic-color-grey2: var(--ctp-text) !important;
+  --ytmusic-color-grey3: var(--ctp-subtext1) !important;
+  --ytmusic-color-grey4: var(--ctp-overlay0) !important;
+  --ytmusic-color-grey5: var(--ctp-surface2) !important;
+  --ytmusic-color-youtubered: var(--ctp-accent) !important;
+  --ytmusic-color-lightred: var(--ctp-red) !important;
+  --ytmusic-color-mediumred: var(--ctp-red) !important;
+  --ytmusic-color-lightblue: var(--ctp-accent) !important;
+  --ytmusic-color-lightgreen: var(--ctp-green) !important;
+  --ytmusic-color-lightteal: var(--ctp-teal) !important;
+  --ytmusic-color-yellow: var(--ctp-yellow) !important;
+  --ytmusic-color-navyblue: var(--ctp-surface0) !important;
+  --ytmusic-opalescence-dark-grey: var(--ctp-mantle) !important;
+  --ytmusic-background: var(--ctp-base) !important;
+  --ytmusic-brand-background-solid: var(--ctp-mantle) !important;
+  --ytmusic-general-background-a: var(--ctp-mantle) !important;
+  --ytmusic-general-background-c: var(--ctp-base) !important;
+  --ytmusic-text-primary: var(--ctp-text) !important;
+  --ytmusic-text-secondary: var(--ctp-text) !important;
+  --ytmusic-overlay-text-primary: var(--ctp-text) !important;
+  --ytmusic-overlay-text-secondary: var(--ctp-text) !important;
+  --ytmusic-overlay-text-disabled: var(--ctp-overlay0) !important;
+  --ytmusic-text-disabled: var(--ctp-overlay0) !important;
+  --ytmusic-text-primary-inverse: var(--ctp-base) !important;
+  --ytmusic-player-bar-background: var(--ctp-mantle) !important;
+  --ytmusic-player-page-background: var(--ctp-base) !important;
+  --ytmusic-search-background: var(--ctp-mantle) !important;
+  --ytmusic-search-border: var(--ctp-surface1) !important;
+  --ytmusic-menu-item-hover-background-color: var(--ctp-surface0) !important;
+  --ytmusic-dialog-background-color: var(--ctp-mantle) !important;
+  --ytmusic-dropdown-background: var(--ctp-mantle) !important;
+  --ytmusic-dropdown-item-hover-background: var(--ctp-surface0) !important;
+  --ytmusic-divider: var(--ctp-surface1) !important;
+  --ytmusic-playback-progress-color: var(--ctp-accent) !important;
+  --ytmusic-play-pause-button-background: var(--ctp-accent) !important;
+  --ytmusic-icon-inactive: var(--ctp-text) !important;
+  --ytmusic-icon-disabled: var(--ctp-overlay0) !important;
+  --primary-text-color: var(--ctp-text) !important;
+  --secondary-text-color: var(--ctp-text) !important;
+  --disabled-text-color: var(--ctp-overlay0) !important;
+  --primary-background-color: var(--ctp-base) !important;
+  --secondary-background-color: var(--ctp-mantle) !important;
+  --divider-color: var(--ctp-surface1) !important;
+  --accent-color: var(--ctp-accent) !important;
+  --primary-color: var(--ctp-accent) !important;
+  --error-color: var(--ctp-red) !important;
+  --paper-input-container-color: var(--ctp-text) !important;
+  --paper-input-container-input-color: var(--ctp-text) !important;
+  --paper-input-container-focus-color: var(--ctp-accent) !important;
+  --paper-input-container-invalid-color: var(--ctp-red) !important;
+  --paper-checkbox-checked-color: var(--ctp-accent) !important;
+  --paper-checkbox-checkmark-color: var(--ctp-base) !important;
+  --paper-checkbox-unchecked-color: var(--ctp-overlay1) !important;
+  --paper-radio-button-checked-color: var(--ctp-accent) !important;
+  --paper-radio-button-unchecked-color: var(--ctp-overlay1) !important;
+  --paper-toggle-button-checked-button-color: var(--ctp-accent) !important;
+  --paper-toggle-button-checked-bar-color: var(--ctp-accent) !important;
+  --paper-toggle-button-unchecked-button-color: var(--ctp-overlay1) !important;
+  --paper-toggle-button-unchecked-bar-color: var(--ctp-surface2) !important;
+  --yt-primary-text-color: var(--ctp-text) !important;
+  --yt-secondary-text-color: var(--ctp-text) !important;
+  --yt-endpoint-color: var(--ctp-text) !important;
+  --yt-endpoint-hover-color: var(--ctp-accent) !important;
+  --yt-endpoint-visited-color: var(--ctp-text) !important;
 }
 
 *
@@ -58,6 +272,9 @@ i.material-icons:hover
 body
 {
   background: var(--ctp-base) !important;
+  color: var(--ctp-text) !important;
+  accent-color: var(--ctp-accent);
+  color-scheme: dark;
 }
 
 ytmusic-nav-bar
@@ -78,6 +295,7 @@ ytmusic-pivot-bar-item-renderer
 ytmusic-search-box
 {
   color: var(--ctp-text) !important;
+  --ytmusic-search-border: var(--ctp-surface1) !important;
 }
 
 a.ytmusic-content-update-chip
@@ -146,7 +364,7 @@ paper-tabs.ytmusic-player-page
 
 yt-formatted-string.byline.style-scope.ytmusic-player-queue-item
 {
-  color: var(--ctp-accent) !important;
+  color: var(--ctp-text) !important;
 }
 
 yt-formatted-string.duration.style-scope.ytmusic-player-queue-item
@@ -262,11 +480,6 @@ ytmusic-data-bound-top-level-menu-item.ytmusic-data-bound-menu-renderer:not(:fir
 }
 
 yt-icon.ytmusic-inline-badge-renderer
-{
-  color: var(--ctp-text) !important;
-}
-
-.title.ytmusic-carousel-shelf-basic-header-renderer, .title.ytmusic-immersive-header-renderer, .description.ytmusic-immersive-header-renderer
 {
   color: var(--ctp-text) !important;
 }
@@ -427,7 +640,7 @@ a.yt-simple-endpoint.style-scope.yt-formatted-string
 
 yt-formatted-string.fixed-column.MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIORITY_HIGH.style-scope.ytmusic-responsive-list-item-renderer
 {
-  color: var(--ctp-accent) !important;
+  color: var(--ctp-text) !important;
 }
 
 yt-formatted-string.subtitle.style-scope.ytmusic-detail-header-renderer
@@ -531,7 +744,7 @@ div.content.style-scope.ytmusic-playlist-form
 {
   caret-color: var(--ctp-accent) !important;
   background-color: var(--ctp-base) !important;
-  color: var(--ctp-base) !important;
+  color: var(--ctp-text) !important;
 }
 
 div#player-bar-background.style-scope.ytmusic-app-layout
@@ -1453,6 +1666,17 @@ img#img.style-scope.yt-img-shadow[src="https://www.gstatic.com/youtube/img/promo
   background-color: var(--ctp-accent) !important;
 }
 
+ytmusic-multi-page-menu,
+ytmusic-multi-page-menu-renderer
+{
+  border-radius: 12px !important;
+}
+
+ytmusic-multi-page-menu-renderer
+{
+  border: 2px solid var(--ctp-surface1) !important;
+}
+
 ytmusic-multi-select-menu-bar.style-scope.ytmusic-dialog
 {
   background-color: var(--ctp-mantle) !important;
@@ -1477,7 +1701,7 @@ yt-checkbox-renderer.fixed-column.MUSIC_RESPONSIVE_LIST_ITEM_COLUMN_DISPLAY_PRIO
 
 .yt-icon{
   fill: var(--ctp-accent) !important;
-  --icon-color: var(--cpt-accent) !important;
+  --icon-color: var(--ctp-accent) !important;
 }
 
 button.yt-icon-button > yt-icon
@@ -1715,7 +1939,7 @@ yt-formatted-string.title.style-scope.ytmusic-setting-single-option-menu-rendere
 
 .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--text
 {
-  color: var(--ctp-accent) !important;
+  color: var(--ctp-text) !important;
 }
 
 .yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled
@@ -1739,20 +1963,22 @@ yt-formatted-string.title.style-scope.ytmusic-setting-single-option-menu-rendere
 ytmusic-av-toggle[playback-mode=OMV_PREFERRED] .video-button.ytmusic-av-toggle
 {
   background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
 }
 
 ytmusic-av-toggle[playback-mode=ATV_PREFERRED] .song-button.ytmusic-av-toggle
 {
   background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
 }
 
-ytmusic-av-toggle[toggle-disabled] .song-button.ytmusic-av-toggle
+ytmusic-av-toggle .song-button.ytmusic-av-toggle
 {
   color: var(--ctp-accent) !important;
   background-color: var(--ctp-crust);
 }
 
-ytmusic-av-toggle[toggle-disabled] .video-button.ytmusic-av-toggle
+ytmusic-av-toggle .video-button.ytmusic-av-toggle
 {
   color: var(--ctp-accent) !important;
   background-color: var(--ctp-crust);
@@ -1850,7 +2076,7 @@ ytmusic-player-page[is-mweb-modernization-enabled][player-page-ui-state=TABS_VIE
 }
 
 .content-info-wrapper.ytmusic-player-bar .byline.ytmusic-player-bar {
-  color: var(--ctp-accent) !important;
+  color: var(--ctp-text) !important;
 }
 
 .title.ytmusic-player-controls {
@@ -1858,7 +2084,7 @@ ytmusic-player-page[is-mweb-modernization-enabled][player-page-ui-state=TABS_VIE
 }
 
 .byline.ytmusic-player-controls {
-  color: var(--ctp-accent) !important;
+  color: var(--ctp-text) !important;
 }
 
 .play-pause-button-wrapper.ytmusic-player-controls {
@@ -1904,8 +2130,8 @@ ytmusic-player-page[is-mweb-modernization-enabled] .background-gradient.ytmusic-
 }
 
 ytmusic-guide-entry-renderer:not([is-primary]) #play-button.ytmusic-guide-entry-renderer {
-  background-color: none !important;
-  color: none !important;
+  background-color: transparent !important;
+  color: var(--ctp-text) !important;
 }
 
 .go3564761155 {
@@ -1932,7 +2158,7 @@ ytmusic-nav-bar[enable-bauhaus-style] .app-bar-button.ytmusic-nav-bar {
 }
 
 yt-formatted-string.ytmusic-guide-signin-promo-renderer {
-  color: var(--ctp-subtext) !important;
+  color: var(--ctp-text) !important;
 }
 
 yt-icon.ytmusic-guide-signin-promo-renderer {
@@ -1941,4 +2167,290 @@ yt-icon.ytmusic-guide-signin-promo-renderer {
 
 .action-text.ytmusic-guide-signin-promo-renderer {
   color: var(--ctp-accent) !important;
+}
+
+ytmusic-miniplayer {
+  --ytmusic-player-bar-background: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+}
+
+.ytMusicMiniPlayerProgressBar {
+  --yt-sys-color-baseline--static-brand-red: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--static-magenta: var(--ctp-accent) !important;
+  --yt-sys-color-baseline--mono-tonal-hover: var(--ctp-surface2) !important;
+  --yt-sys-color-baseline--ten-percent-layer: var(--ctp-surface0) !important;
+}
+
+.ytMusicMiniPlayerProgressBar::-webkit-slider-thumb {
+  background: var(--ctp-accent) !important;
+}
+
+.ytMusicMiniPlayerProgressBar::-moz-range-thumb {
+  background: var(--ctp-accent) !important;
+}
+
+/* The Wiz miniplayer/controls currently bake RGB values into their CSS.
+   These exact classes supplement the shared tokens above. */
+.ytmusicTrackInfoTitle,
+.ytmusicTrackInfoByline,
+.ytMusicMiniPlayerTimeInfo,
+.ytMusicMiniPlayerLiveIndicatorButton,
+.ytMusicMiniPlayerHoverTimeInfo,
+.ytSliderShapeHostSlider,
+.ytSliderShapeVerticalSlider,
+.ytSliderShapeHostIncrementButtonIcon,
+.ytListItemViewModelHost,
+.ytListItemViewModelTitle,
+.ytListItemViewModelSubtitle,
+.ytListItemViewModelSuperlabel,
+.ytListItemViewModelSelectionText,
+.ytListItemViewModelTrailingLabel,
+.ytListItemViewModelAccessory,
+.ytGulpTriggeringDialogViewModelHostTitle,
+.ytGulpTriggeringDialogViewModelHostParagraph,
+.dialog-title.ytmusic-playback-rate-popup-renderer,
+.text.ytmusic-menu-title-renderer,
+.text.ytmusic-toggle-menu-service-item-renderer,
+.label.ytmusic-hotkey-dialog-section-option-renderer,
+.hotkey.ytmusic-hotkey-dialog-section-option-renderer,
+.section-title.ytmusic-hotkey-dialog-section-renderer,
+.top-bar.ytmusic-dismissable-dialog-renderer,
+.section-title.ytmusic-dismissable-dialog-renderer,
+.ytAttributedStringHost,
+.yt-core-attributed-string
+{
+  color: var(--ctp-text) !important;
+}
+
+.ytListItemViewModelDisabled :is(.ytListItemViewModelTitle, .ytListItemViewModelSubtitle, .ytListItemViewModelAccessory, .ytAttributedStringHost) {
+  color: var(--ctp-overlay0) !important;
+}
+
+.ytListItemViewModelHovered,
+.ytListItemViewModelTappable:hover,
+.ytListItemViewModelKeyboardFocused:focus-within
+{
+  background-color: var(--ctp-surface0) !important;
+}
+
+.ytListItemViewModelNewContentIndicator {
+  background-color: var(--ctp-accent) !important;
+}
+
+.ytMusicMiniPlayerVolumePopup,
+.ytMusicMiniPlayerHoverTimeInfo,
+.ytTooltipContainerDefaultTooltipContent,
+.ytTooltipContainerPlayerTooltipContent,
+.ytTooltipContainerPlayerTooltipContentBlurred,
+.ytTooltipContainerEffectMakerTooltipContent
+{
+  background: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--ctp-crust) 50%, transparent) !important;
+  text-shadow: none !important;
+}
+
+.ytMusicMiniPlayerLiveDot,
+.ytmusicTrackInfoLiveBadge
+{
+  background: var(--ctp-red) !important;
+}
+
+.ytmusicTrackInfoLiveBadge {
+  color: var(--ctp-base) !important;
+}
+
+.ytMusicMiniPlayerLiveDotBehind {
+  background: var(--ctp-surface2) !important;
+}
+
+.ytSliderShapeHostSlider::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, var(--ctp-accent) 0%, var(--ctp-accent) var(--yt-slider-shape-gradient-percent), var(--ctp-surface2) var(--yt-slider-shape-gradient-percent), var(--ctp-surface2) 100%) !important;
+}
+
+.ytSliderShapeVerticalSlider::-webkit-slider-runnable-track {
+  background: linear-gradient(to top, var(--ctp-accent) 0%, var(--ctp-accent) var(--yt-slider-shape-gradient-percent), var(--ctp-surface2) var(--yt-slider-shape-gradient-percent), var(--ctp-surface2) 100%) !important;
+}
+
+.ytSliderShapeHostSlider::-webkit-slider-thumb,
+.ytSliderShapeVerticalSlider::-webkit-slider-thumb
+{
+  background: var(--ctp-accent) !important;
+}
+
+.ytSliderShapeHostSlider::-moz-range-track,
+.ytSliderShapeVerticalSlider::-moz-range-track
+{
+  background: var(--ctp-surface2) !important;
+}
+
+.ytSliderShapeHostSlider::-moz-range-progress,
+.ytSliderShapeVerticalSlider::-moz-range-progress,
+.ytSliderShapeHostSlider::-moz-range-thumb,
+.ytSliderShapeVerticalSlider::-moz-range-thumb
+{
+  background: var(--ctp-accent) !important;
+}
+
+.ytSliderShapeHostIncrementButtonIconWrapper {
+  background: var(--ctp-surface0) !important;
+}
+
+/* Both generations of button shapes, with explicit state contrast. */
+.ytSpecButtonShapeNextHost,
+.yt-spec-button-shape-next
+{
+  color: var(--ctp-text) !important;
+}
+
+.ytSpecButtonShapeNextHost.ytSpecButtonShapeNextTonal,
+.yt-spec-button-shape-next.yt-spec-button-shape-next--tonal
+{
+  background: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+}
+
+.ytSpecButtonShapeNextHost.ytSpecButtonShapeNextOutline,
+.ytSpecButtonShapeNextHost.ytSpecButtonShapeNextFocused,
+.yt-spec-button-shape-next.yt-spec-button-shape-next--outline
+{
+  border-color: var(--ctp-surface2) !important;
+  color: var(--ctp-text) !important;
+}
+
+.ytSpecButtonShapeNextHost:hover,
+.yt-spec-button-shape-next:hover
+{
+  background-color: var(--ctp-surface1) !important;
+}
+
+.ytSpecButtonShapeNextHost.ytSpecButtonShapeNextFilled,
+.yt-spec-button-shape-next.yt-spec-button-shape-next--filled
+{
+  background: var(--ctp-accent) !important;
+  color: var(--ctp-base) !important;
+}
+
+.ytSpecButtonShapeNextHost.ytSpecButtonShapeNextFilled:hover,
+.yt-spec-button-shape-next.yt-spec-button-shape-next--filled:hover
+{
+  background: var(--ctp-lavender) !important;
+}
+
+/* Attributed strings can supply inline colors; button content must inherit
+   its button's foreground, including filled and disabled states. */
+.ytSpecButtonShapeNextHost :is(.ytAttributedStringHost, .yt-core-attributed-string, .ytSpecButtonShapeNextIcon),
+.yt-spec-button-shape-next :is(.ytAttributedStringHost, .yt-core-attributed-string, yt-formatted-string, yt-icon, span)
+{
+  color: inherit !important;
+  fill: currentColor !important;
+}
+
+.ytSpecButtonShapeNextHost[aria-pressed="true"],
+.yt-spec-button-shape-next[aria-pressed="true"]
+{
+  background: var(--ctp-accent) !important;
+  color: var(--ctp-base) !important;
+}
+
+.ytSpecButtonShapeNextHost.ytSpecButtonShapeNextDisabled,
+.ytSpecButtonShapeNextHost:disabled,
+.ytSpecButtonShapeNextHost[aria-disabled="true"],
+.yt-spec-button-shape-next:disabled,
+.yt-spec-button-shape-next[aria-disabled="true"],
+.ytSliderShapeHostIncrementButton:disabled .ytSliderShapeHostIncrementButtonIcon
+{
+  color: var(--ctp-overlay0) !important;
+  background-color: var(--ctp-surface0) !important;
+}
+
+.ytSpecButtonShapeNextHost:focus-visible,
+.yt-spec-button-shape-next:focus-visible,
+.ytMusicMiniPlayerProgressBar:focus-visible,
+.ytSliderShapeHostSlider:focus-visible,
+.ytSliderShapeVerticalSlider:focus-visible
+{
+  outline: 2px solid var(--ctp-accent) !important;
+  outline-offset: 2px;
+}
+
+/* Popups may be siblings of the player, so do not scope them to miniplayer. */
+ytmusic-menu-popup-renderer,
+ytmusic-multi-page-menu-renderer,
+ytmusic-multi-select-menu-renderer,
+ytmusic-settings-page,
+ytmusic-setting-category-collection-renderer,
+ytmusic-dialog,
+ytmusic-add-to-playlist-renderer,
+ytmusic-unified-share-panel-renderer,
+ytmusic-playback-rate-popup-renderer,
+ytmusic-dismissable-dialog-renderer,
+ytmusic-hotkey-dialog-renderer,
+.ytGulpTriggeringDialogViewModelHost,
+yt-confirm-dialog-renderer,
+tp-yt-paper-dialog,
+tp-yt-paper-listbox,
+tp-yt-paper-toast
+{
+  background-color: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+  border-color: var(--ctp-surface1) !important;
+}
+
+ytmusic-popup-container :is(input, textarea, select),
+ytmusic-playlist-form :is(input, textarea, select)
+{
+  color: var(--ctp-text) !important;
+  background-color: var(--ctp-base) !important;
+  caret-color: var(--ctp-accent) !important;
+  border-color: var(--ctp-surface1) !important;
+}
+
+ytmusic-menu-service-item-renderer,
+ytmusic-menu-navigation-item-renderer,
+ytmusic-toggle-menu-service-item-renderer,
+ytmusic-multi-select-menu-item-renderer,
+ytmusic-dropdown-item-renderer
+{
+  color: var(--ctp-text) !important;
+}
+
+ytmusic-menu-service-item-renderer:hover,
+ytmusic-menu-navigation-item-renderer:hover,
+ytmusic-toggle-menu-service-item-renderer:hover,
+ytmusic-multi-select-menu-item-renderer:hover,
+ytmusic-dropdown-item-renderer:hover
+{
+  background-color: var(--ctp-surface0) !important;
+}
+
+/* Native video controls, settings/volume popovers, and ad control text. */
+ytmusic-player :is(.ytp-menuitem, .ytp-menuitem-label, .ytp-menuitem-content, .ytp-panel-header, .ytp-panel-title, .ytp-button, .ytp-time-display, .ytp-tooltip-text, .ytp-ad-text, .ytp-ad-button-text)
+{
+  color: var(--ctp-text) !important;
+  text-shadow: none !important;
+}
+
+.html5-video-player :is(.ytp-popup, .ytp-settings-menu, .ytp-panel, .ytp-volume-popover, .ytp-tooltip-text)
+{
+  background: var(--ctp-mantle) !important;
+  border-color: var(--ctp-surface1) !important;
+}
+
+.html5-video-player .ytp-menuitem:hover {
+  background-color: var(--ctp-surface0) !important;
+}
+
+.html5-video-player .ytp-svg-fill {
+  fill: var(--ctp-text) !important;
+}
+
+.html5-video-player :is(.ytp-play-progress, .ytp-scrubber-button, .ytp-volume-slider-handle),
+.html5-video-player .ytp-volume-slider-handle::before
+{
+  background: var(--ctp-accent) !important;
+}
+
+.html5-video-player .ytp-volume-slider-handle::after {
+  background: var(--ctp-surface2) !important;
 }
