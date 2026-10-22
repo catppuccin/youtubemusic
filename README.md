@@ -35,7 +35,7 @@
 </details>
 
 ## Usage
-### [Youtube Music Desktop App (th-ch)](https://github.com/th-ch/youtube-music)
+### [Pear Desktop](https://github.com/pear-devs/pear-desktop)
 
 1. Download a CSS file with your desired flavor from `src` e.g. `mocha.css` (NOT `youtubemusic.user.css`).
 2. Open the app, click `Options > Visual Tweaks > Theme > Import custom CSS file`, and choose the downloaded CSS file.
